@@ -10,7 +10,7 @@
               </div>
 
               <div class="links" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1400" data-aos-once="true">
-                  <a href="/" class="about">O mnie</a>
+                  <nuxt-link to="/about" class="about">O mnie</nuxt-link>
                   <a href="/" class="projects">Projekty</a>
                   <a href="https://github.com/jakubgania" target="_blank" class="github">GitHub</a>
               </div>
