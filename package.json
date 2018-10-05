@@ -1,0 +1,26 @@
+{
+  "name": "business-website",
+  "version": "1.0.0",
+  "description": " ",
+  "author": "Jakub Gania",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.5",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "vuetify": "^1.2.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^7.1.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
