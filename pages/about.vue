@@ -28,15 +28,19 @@
                 </div>
               </v-flex>
               <v-flex xs12 lg12 style="border-top: 1px solid #d7d7d7;">
-                <div class="description-name-2">
-                  Kontakt
-                </div>
-              </v-flex>
-              <v-flex xs12 lg12>
-                <v-chip class="email-tag">
-                  <v-icon style="margin-right:14px;">alternate_email</v-icon>
-                  <a href="mailto:contact@jakubgania.io" class="email-link">contact@jakubgania.io</a>
-                </v-chip>
+                <v-layout row wrap class="contact-section">
+                  <v-flex lg3>
+                    <div class="description-name-2">
+                      Kontakt
+                    </div>
+                  </v-flex>
+                  <v-flex lg9>
+                    <v-chip class="email-tag">
+                      <v-icon style="margin-right:14px;">alternate_email</v-icon>
+                      <a href="mailto:contact@jakubgania.io" class="email-link">contact@jakubgania.io</a>
+                    </v-chip>
+                  </v-flex>
+                </v-layout>
               </v-flex>
               <v-flex lg12 class="link-section">
                 <v-layout row wrap>

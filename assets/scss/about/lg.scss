@@ -1,43 +1,46 @@
 .template-layout
 {
-    min-height: 100vh;
-    height: auto;
-    background-color: #ffffff;
+  min-height: 100vh;
+  height: auto;
+  background-color: #ffffff;
 }
 .image-section
 {
-    background-color: #ffffff;
-    text-align: center;
-    margin-top: 110px;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 110px;
 }
 .information-container
 {
-    margin-top: calc(100vh - 74vh);
-    min-height: 480px;
+  margin-top: calc(100vh - 74vh);
+  min-height: 480px;
 }
 .information-section
 {
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .description-name
 {
-    font-size: 64px;
-    letter-spacing: 2px;
-    padding-bottom: 20px;
+  font-size: 64px;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
 }
 .description-name-2
 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.contact-section
+{
+  height: 80px;
+  line-height: 80px;
 }
 .description
 {
   font-size: 14.8px;
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 .email-tag
 {
@@ -45,14 +48,13 @@
 }
 .email-link
 {
-    text-decoration: none;
-    color: #000000;
-    letter-spacing: 1px;
-    font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 .link-section
 {
-  margin-top: 30px;
   border-top: 1px solid #d7d7d7;
   padding-top: 30px;
 
