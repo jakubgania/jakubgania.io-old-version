@@ -1,18 +1,18 @@
 .template-layout
 {
-  min-height: 100vh;
-  height: auto;
-  background-color: #ffffff;
+  height: 100vh;
+  min-height: auto;
+  // height: auto;
 }
 .image-section
 {
   background-color: #ffffff;
   text-align: center;
-  margin-top: 110px;
+  padding-bottom: 38px;
 }
 .information-container
 {
-  margin-top: calc(100vh - 74vh);
+  margin-top: 25%;
   min-height: 480px;
 }
 .information-section
