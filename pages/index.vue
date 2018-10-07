@@ -1,27 +1,27 @@
 <template>
   <div class="flex-center position-ref full-height" style="background-color:#000000;">
-          <div class="content">
-              <div class="main-title" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-                  Software Developer
-              </div>
-
-              <div class="my-name" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1200" data-aos-once="true">
-                Jakub Gania
-              </div>
-
-              <div class="links" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1400" data-aos-once="true">
-                  <nuxt-link to="/about" class="about">O mnie</nuxt-link>
-                  <a href="/" class="projects">Projekty</a>
-                  <a href="https://github.com/jakubgania" target="_blank" class="github">GitHub</a>
-              </div>
-
-          </div>
-
-          <div class="copyright">
-            Copyright &copy 2018 Jakub Gania
-          </div>
-
+    <div class="content">
+      <div class="main-title" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
+        Software Developer
       </div>
+
+      <div class="my-name" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1200" data-aos-once="true">
+        Jakub Gania
+      </div>
+
+      <div class="links" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1400" data-aos-once="true">
+        <nuxt-link to="/about" class="about">O mnie</nuxt-link>
+        <a href="/" class="projects">Projekty</a>
+        <a href="https://github.com/jakubgania" target="_blank" class="github">GitHub</a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      Copyright &copy 2018 Jakub Gania
+    </div>
+
+  </div>
 </template>
 
 <script>
@@ -29,7 +29,7 @@
 export default {
   head() {
     return {
-      title : 'Jakub Gania'
+      title : 'Jakub Gania - Software Developer'
     }
   }
 }

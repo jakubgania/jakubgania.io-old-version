@@ -1,35 +1,28 @@
 <template>
   <v-layout row wrap class="template-layout">
-    <v-flex sm10 offset-sm1 md10 offset-md1 lg8 offset-lg2>
+    <v-flex xs12 sm10 offset-sm1 md10 offset-md1 lg8 offset-lg2>
       <v-layout row wrap class="information-container">
-        <!-- <v-flex lg4>
-          <div class="image-section">
-            <v-avatar  size="260" color="grey lighten-4" >
-              <img :src="profileImage" alt="" style="">
-            </v-avatar>
-          </div>
-        </v-flex> -->
-        <v-flex lg8 offset-lg2>
+        <v-flex xs12 lg8 offset-lg2>
           <div class="information-section">
             <v-layout row wrap>
               <v-flex xs12 lg12>
                 <v-layout row wrap>
-                  <v-flex lg4>
-                    <div class="image-section">
+                  <v-flex xs12 lg4>
+                    <div class="image-section" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
                       <v-avatar  size="200" color="grey lighten-4" >
                         <img :src="profileImage" alt="" style="">
                       </v-avatar>
                     </div>
                   </v-flex>
-                  <v-flex lg8 style="height:200px;line-height:200px;padding-left:40px;">
-                    <div class="description-name">
+                  <v-flex xs12 lg8 class="description-name-section">
+                    <div class="description-name" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
                       {{ descriptions.name }}
                     </div>
                   </v-flex>
                 </v-layout>
               </v-flex>
               <v-flex xs12 lg12 style="margin-bottom:20px;">
-                <div class="description">
+                <div class="description" data-aos="fade-left" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
                   {{ descriptions.description1 }}
                 </div>
               </v-flex>
@@ -41,28 +34,43 @@
               <v-flex xs12 lg12 style="border-top: 1px solid #d7d7d7;">
                 <v-layout row wrap class="contact-section">
                   <v-flex lg3>
-                    <div class="description-name-2">
+                    <div class="description-name-2" data-aos="fade-right" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
                       Kontakt
                     </div>
                   </v-flex>
                   <v-flex lg9>
-                    <v-chip class="email-tag">
-                      <v-icon style="margin-right:14px;">alternate_email</v-icon>
-                      <a href="mailto:contact@jakubgania.io" class="email-link">contact@jakubgania.io</a>
-                    </v-chip>
+                    <div data-aos="fade-right" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
+                      <v-chip class="email-tag">
+                        <v-icon style="margin-right:14px;">alternate_email</v-icon>
+                        <a href="mailto:contact@jakubgania.io" class="email-link">contact@jakubgania.io</a>
+                      </v-chip>
+                    </div>
+
                   </v-flex>
                 </v-layout>
               </v-flex>
               <v-flex lg12 class="link-section">
                 <v-layout row wrap>
                   <v-flex lg4>
-                    <nuxt-link to="/" class="link">Strona główna</nuxt-link>
+                    <nuxt-link to="/" class="link">
+                      <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
+                        Strona główna
+                      </div>
+                    </nuxt-link>
                   </v-flex>
                   <v-flex lg4 style="text-align:center;">
-                    <nuxt-link to="/" class="link">Projekty</nuxt-link>
+                    <nuxt-link to="/" class="link">
+                      <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
+                        Projekty
+                      </div>
+                    </nuxt-link>
                   </v-flex>
                   <v-flex lg4 style="text-align:right;">
-                    <a href="https://github.com/jakubgania" target="_blank" class="link">Github</a>
+                    <a href="https://github.com/jakubgania" target="_blank" class="link">
+                      <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
+                        Github
+                      </div>
+                    </a>
                   </v-flex>
                 </v-layout>
               </v-flex>
@@ -71,6 +79,11 @@
         </v-flex>
       </v-layout>
     </v-flex>
+
+    <div class="copyright">
+      Copyright &copy 2018 Jakub Gania
+    </div>
+
   </v-layout>
 </template>
 
