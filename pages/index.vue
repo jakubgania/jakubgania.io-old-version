@@ -9,10 +9,21 @@
         Jakub Gania
       </div>
 
-      <div class="links" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1400" data-aos-once="true">
-        <nuxt-link to="/about" class="about">O mnie</nuxt-link>
-        <a href="/" class="projects">Projekty</a>
-        <a href="https://github.com/jakubgania" target="_blank" class="github">GitHub</a>
+      <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1400" data-aos-once="true">
+        <v-layout row wrap class="links">
+          <v-flex xs12 lg3 style="padding-bottom:20px;">
+            <nuxt-link to="/about" class="link about">O mnie</nuxt-link>
+          </v-flex>
+          <v-flex xs12 lg3 style="padding-bottom:20px;">
+            <a href="/" class="link projects">Projekty</a>
+          </v-flex>
+          <v-flex xs12 lg3 style="padding-bottom:20px;">
+            <a href="https://github.com/jakubgania" target="_blank" class="link github">GitHub</a>
+          </v-flex>
+          <v-flex xs12 lg3 style="padding-bottom:20px;">
+            <a href="https://www.linkedin.com/in/jakub-gania-software-developer/" target="_blank" class="link linkedin">LinkedIn</a>
+          </v-flex>
+        </v-layout>
       </div>
 
     </div>
@@ -78,7 +89,7 @@ body, html {
   margin-bottom: 30px;
 }
 
-.links > a {
+.link {
   color: #636b6f;
   padding: 0 25px;
   font-size: 14px;
@@ -98,6 +109,10 @@ body, html {
   &.github:hover {
     color: #6200EA;
   }
+
+  &.linkedin:hover {
+    color: #0050ad;
+  }
 }
 
 .copyright {
@@ -115,7 +130,7 @@ body, html {
 
 @media only screen and (max-width: 600px) {
   .main-title {
-    font-size: 60px;
+    font-size: 54px;
   }
 }
 
