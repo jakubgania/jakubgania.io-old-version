@@ -12,7 +12,7 @@
 }
 .information-container
 {
-  margin-top: 25%;
+  margin-top: 200px;
   min-height: 480px;
 }
 .information-section
@@ -66,9 +66,14 @@
   .link
   {
     color: #b4b4b4;
-    font-size: 14.8px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 2px;
     text-decoration: none;
+
+    &:hover
+    {
+      color: #394ecc;
+    }
   }
 }
 .copyright {

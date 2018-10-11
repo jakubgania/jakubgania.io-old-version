@@ -21,7 +21,7 @@
             <a href="https://github.com/jakubgania" target="_blank" class="link github">GitHub</a>
           </v-flex>
           <v-flex xs12 lg3 style="padding-bottom:20px;">
-            <a href="https://www.linkedin.com/in/jakub-gania-software-developer/" target="_blank" class="link linkedin">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jakubgania" target="_blank" class="link linkedin">LinkedIn</a>
           </v-flex>
         </v-layout>
       </div>

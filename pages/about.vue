@@ -51,24 +51,31 @@
               </v-flex>
               <v-flex lg12 class="link-section">
                 <v-layout row wrap>
-                  <v-flex lg4>
+                  <v-flex lg3 style="text-align:center;">
                     <nuxt-link to="/" class="link">
                       <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
                         Strona główna
                       </div>
                     </nuxt-link>
                   </v-flex>
-                  <v-flex lg4 style="text-align:center;">
+                  <v-flex lg3 style="text-align:center;">
                     <nuxt-link to="/" class="link">
                       <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
                         Projekty
                       </div>
                     </nuxt-link>
                   </v-flex>
-                  <v-flex lg4 style="text-align:right;">
+                  <v-flex lg3 style="text-align:center;">
                     <a href="https://github.com/jakubgania" target="_blank" class="link">
                       <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
                         Github
+                      </div>
+                    </a>
+                  </v-flex>
+                  <v-flex lg3 style="text-align:center;">
+                    <a href="https://www.linkedin.com/in/jakubgania" target="_blank" class="link">
+                      <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
+                        LinkedIn
                       </div>
                     </a>
                   </v-flex>
