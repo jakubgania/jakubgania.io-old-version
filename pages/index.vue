@@ -15,7 +15,7 @@
             <nuxt-link to="/about" class="link about">O mnie</nuxt-link>
           </v-flex>
           <v-flex xs12 lg3 style="padding-bottom:20px;">
-            <a href="/" class="link projects">Projekty</a>
+            <a href="/projects" class="link projects">Projekty</a>
           </v-flex>
           <v-flex xs12 lg3 style="padding-bottom:20px;">
             <a href="https://github.com/jakubgania" target="_blank" class="link github">GitHub</a>
