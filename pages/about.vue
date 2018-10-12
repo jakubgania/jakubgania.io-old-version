@@ -9,7 +9,7 @@
                 <v-layout row wrap>
                   <v-flex xs12 lg4>
                     <div class="image-section" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-                      <v-avatar  size="200" color="grey lighten-4" >
+                      <v-avatar :size="photoSize" color="grey lighten-4" >
                         <img :src="profileImage" alt="" style="">
                       </v-avatar>
                     </div>
@@ -59,7 +59,7 @@
                     </nuxt-link>
                   </v-flex>
                   <v-flex lg3 style="text-align:center;">
-                    <nuxt-link to="/" class="link">
+                    <nuxt-link to="/projects" class="link">
                       <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
                         Projekty
                       </div>
@@ -106,6 +106,18 @@ export default {
         'description1' : 'Nazywam się Jakub Gania. W 2018 roku uzyskałem tytuł inżyniera informatki z specjalizacją inżyniera systemów informatycznych. Specjalizuję sie w technologiach webowych. Mieszkam we Wrocławiu.',
         'description2' : 'Prywatnie interesują mnie nowe technologie, startupy i bardzo lubię fotografować. Czytam książki o   . . .  oraz przeglądam portale technologiczne.',
       },
+    }
+  },
+  computed: {
+    photoSize() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return '180';
+        // case 'sm': return '400'
+        // case 'md': return '500'
+        case 'lg': return '200';
+        // case 'xl': return '800'
+        default: return '200';
+      }
     }
   },
   head() {
