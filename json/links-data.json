@@ -1,0 +1,63 @@
+{
+    "links_data": [
+      {
+        "section_name": "Programowanie",
+        "resource_addresses": [
+          {
+            "url": "https://vuejs.org/"
+          },
+          {
+            "url": "https://vuetifyjs.com/en/"
+          },
+          {
+            "url": "https://nuxtjs.org/"
+          }
+        ]
+      },
+      {
+        "section_name": "Software",
+        "resource_addresses": [
+          
+        ]
+      },
+      {
+        "section_name": "Google",
+        "resource_addresses": [
+          {
+            "url": "https://material.io/tools/icons/?style=baseline"
+          },
+          {
+            "url": "https://material.io/"
+          },
+          {
+            "url": "https://fonts.google.com/"
+          }
+        ]
+      },
+      {
+        "section_name": "Portale technologiczne",
+        "resource_addresses": [
+          {
+            "url": "https://www.purepc.pl/"
+          },
+          {
+            "url": "http://www.benchmark.pl/"
+          },
+          {
+            "url": "https://www.dobreprogramy.pl/"
+          },
+          {
+            "url": "https://pclab.pl/"
+          }
+        ]
+      },
+      {
+        "section_name": "Kryptowaluty",
+        "resource_addresses": [
+          {
+            "url": "https://coinmarketcap.com/"
+          }
+        ]
+      }
+    ]
+}
