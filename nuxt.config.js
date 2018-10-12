@@ -39,7 +39,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-    {src:"~/plugins/aos", ssr: false}
+    { src:"~/plugins/aos", ssr: false },
+    { src: '~plugins/ga.js', ssr: false },
   ],
 
   /*
