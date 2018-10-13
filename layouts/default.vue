@@ -2,6 +2,10 @@
   <v-app>
     <v-content style="background-color: #ffffff;">
 
+      <!-- navigation drawer component -->
+
+      <!-- toolbar header component -->
+
       <div v-if="displayToolbar()" class="">
         <v-toolbar color="white" style="box-shadow: 0px 1px #f2f2f2 !important;">
           <v-toolbar-title>
@@ -12,25 +16,25 @@
             </div>
           </v-toolbar-title>
           <v-spacer></v-spacer>
-          <!-- <v-toolbar-side-icon class=""></v-toolbar-side-icon> -->
+          <v-toolbar-side-icon class="hidden-xl-only hidden-lg-only hidden-md-only"></v-toolbar-side-icon>
           <v-toolbar-items class="hidden-sm-and-down">
-            <v-btn to="/" flat>
-              <div class="link-button">
+            <v-btn to="/" flat class="link-button-section">
+              <div class="link-text">
                 Strona główna
               </div>
             </v-btn>
-            <v-btn to="/about" flat>
-              <div class="link-button">
+            <v-btn to="/about" flat class="link-button-section">
+              <div class="link-text">
                 O mnie
               </div>
             </v-btn>
-            <v-btn to="/projects" flat>
-              <div class="link-button">
+            <v-btn to="/projects" flat class="link-button-section">
+              <div class="link-text">
                 Projekty
               </div>
             </v-btn>
-            <v-btn to="/other-resources" flat>
-              <div class="link-button">
+            <v-btn to="/other-resources" flat class="link-button-section">
+              <div class="link-text">
                 Inne
               </div>
             </v-btn>
@@ -59,15 +63,28 @@
   }
 </script>
 
-<style>
+<style lang="scss">
 .container
 {
   padding: 0;
 }
-.link-button
+.link-button-section
+{
+  &:hover
+  {
+    background-color: #000000;
+
+    .link-text
+    {
+      color: #ffffff;
+    }
+  }
+}
+.link-text
 {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
+  color: #000000;
 }
 </style>
