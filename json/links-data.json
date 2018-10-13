@@ -17,7 +17,42 @@
       {
         "section_name": "Software",
         "resource_addresses": [
-          
+          {
+            "url": "https://atom.io/"
+          },
+          {
+            "url": "https://code.visualstudio.com/"
+          },
+          {
+            "url": "https://www.getpostman.com/"
+          },
+          {
+            "url": "https://git-scm.com/downloads"
+          },
+          {
+            "url": "https://desktop.github.com/"
+          },
+          {
+            "url": "https://docs.microsoft.com/en-us/windows/wsl/install-win10"
+          },
+          {
+            "url": "https://notepad-plus-plus.org/"
+          },
+          {
+            "url": "https://filezilla-project.org/"
+          },
+          {
+            "url": "https://www.putty.org/"
+          },
+          {
+            "url": "https://www.phpmyadmin.net/"
+          },
+          {
+            "url": "https://www.ubuntu.com/"
+          },
+          {
+            "url": "https://www.virtualbox.org/wiki/Downloads"
+          }
         ]
       },
       {
@@ -49,6 +84,12 @@
           {
             "url": "https://pclab.pl/"
           }
+        ]
+      },
+      {
+        "section_name": "Youtube",
+        "resource_addresses": [
+
         ]
       },
       {
