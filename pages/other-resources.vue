@@ -34,7 +34,7 @@
           lg12
         >
           <div class="" style="font-size:18px;padding-bottom:10px;">
-            <a :href="resource.url" target="_blank" class="link">
+            <a :href="resource.url" target="_blank" class="link-resource">
               {{ resource.title ? index + 1 + ". " + resource.title : index + 1 + ". " + resource.url }}
             </a>
           </div>
@@ -69,7 +69,7 @@ export default {
 {
   padding-bottom: 80px;
 }
-.link
+.link-resource
 {
   text-decoration: none;
 
