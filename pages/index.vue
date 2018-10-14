@@ -11,23 +11,23 @@
 
       <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1400" data-aos-once="true">
         <v-layout row wrap class="links">
-          <v-flex xs12 lg2 style="padding-bottom:20px;">
+          <v-flex xs6 lg2 style="padding-bottom:20px;">
             <nuxt-link to="/about" class="link about">O mnie</nuxt-link>
           </v-flex>
-          <v-flex xs12 lg2 style="padding-bottom:20px;">
+          <v-flex xs6 lg2 style="padding-bottom:20px;">
             <a href="/projects" class="link projects">Projekty</a>
           </v-flex>
-          <v-flex xs12 lg2 style="padding-bottom:20px;">
+          <v-flex xs6 lg2 style="padding-bottom:20px;">
             <a href="/contact" class="link projects">Kontakt</a>
           </v-flex>
-          <v-flex xs12 lg2 style="padding-bottom:20px;">
+          <v-flex xs6 lg2 style="padding-bottom:20px;">
+            <a href="/other-resources" class="link other-resources">Inne</a>
+          </v-flex>
+          <v-flex xs6 lg2 style="padding-bottom:20px;">
             <a href="https://github.com/jakubgania" target="_blank" class="link github">GitHub</a>
           </v-flex>
-          <v-flex xs12 lg2 style="padding-bottom:20px;">
+          <v-flex xs6 lg2 style="padding-bottom:20px;">
             <a href="https://www.linkedin.com/in/jakubgania" target="_blank" class="link linkedin">LinkedIn</a>
-          </v-flex>
-          <v-flex xs12 lg2 style="padding-bottom:20px;">
-            <a href="/other-resources" class="link other-resources">Inne</a>
           </v-flex>
         </v-layout>
       </div>
