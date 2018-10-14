@@ -66,6 +66,10 @@ export default {
           path: '/projects'
         },
         {
+          title: "Kontakt",
+          path: '/contact'
+        },
+        {
           title: "Inne",
           path: '/other-resources'
         }

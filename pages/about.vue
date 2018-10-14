@@ -31,24 +31,6 @@
                   {{ descriptions.description2 }}
                 </div>
               </v-flex> -->
-              <v-flex xs12 lg12 style="border-top: 1px solid #d7d7d7;">
-                <v-layout row wrap class="contact-section">
-                  <v-flex lg3>
-                    <div class="description-name-2" data-aos="fade-right" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-                      Kontakt
-                    </div>
-                  </v-flex>
-                  <v-flex lg9>
-                    <div data-aos="fade-right" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-                      <v-chip class="email-tag">
-                        <v-icon style="margin-right:14px;">alternate_email</v-icon>
-                        <a href="mailto:contact@jakubgania.io" class="email-link">contact@jakubgania.io</a>
-                      </v-chip>
-                    </div>
-
-                  </v-flex>
-                </v-layout>
-              </v-flex>
               <v-flex lg12 class="link-section">
                 <v-layout row wrap>
                   <v-flex lg3 style="text-align:center;">

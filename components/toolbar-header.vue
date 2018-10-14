@@ -26,6 +26,11 @@
             Projekty
           </div>
         </v-btn>
+        <v-btn to="/contact" flat class="link-button-section">
+          <div class="link-text">
+            Kontakt
+          </div>
+        </v-btn>
         <v-btn to="/other-resources" flat class="link-button-section">
           <div class="link-text">
             Inne

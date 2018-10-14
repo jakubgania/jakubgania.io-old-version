@@ -11,11 +11,14 @@
 
       <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1400" data-aos-once="true">
         <v-layout row wrap class="links">
-          <v-flex xs12 lg2 offset-lg1 style="padding-bottom:20px;">
+          <v-flex xs12 lg2 style="padding-bottom:20px;">
             <nuxt-link to="/about" class="link about">O mnie</nuxt-link>
           </v-flex>
           <v-flex xs12 lg2 style="padding-bottom:20px;">
             <a href="/projects" class="link projects">Projekty</a>
+          </v-flex>
+          <v-flex xs12 lg2 style="padding-bottom:20px;">
+            <a href="/contact" class="link projects">Kontakt</a>
           </v-flex>
           <v-flex xs12 lg2 style="padding-bottom:20px;">
             <a href="https://github.com/jakubgania" target="_blank" class="link github">GitHub</a>
@@ -24,7 +27,7 @@
             <a href="https://www.linkedin.com/in/jakubgania" target="_blank" class="link linkedin">LinkedIn</a>
           </v-flex>
           <v-flex xs12 lg2 style="padding-bottom:20px;">
-            <a href="/other-resources" class="link projects">Inne</a>
+            <a href="/other-resources" class="link other-resources">Inne</a>
           </v-flex>
         </v-layout>
       </div>
@@ -50,6 +53,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$text-color: #dadada;
+
 body, html {
   overflow-y: hidden !important;
   min-height: 500px;
@@ -80,7 +85,7 @@ body, html {
 
 .main-title {
   font-size: 84px;
-  color: #636b6f;
+  color: $text-color;
   font-weight: 300;
   letter-spacing: .4rem;
   margin-bottom: 15px;
@@ -90,12 +95,12 @@ body, html {
 
 .my-name {
   font-size: 32px;
-  color: #636b6f;
+  color: $text-color;
   margin-bottom: 30px;
 }
 
 .link {
-  color: #636b6f;
+  color: $text-color;
   padding: 0 25px;
   font-size: 14px;
   font-weight: 600;
@@ -118,6 +123,10 @@ body, html {
   &.linkedin:hover {
     color: #0050ad;
   }
+
+  &.other-resources:hover {
+    color: #fa548e;
+  }
 }
 
 .copyright {
@@ -126,7 +135,7 @@ body, html {
   line-height: 40px;
   position: fixed;
   top: calc(100vh - 40px);
-  color: #636b6f;
+  color: $text-color;
   background-color: #000000;
   z-index: 10;
   text-align: center;
