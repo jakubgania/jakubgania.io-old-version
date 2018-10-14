@@ -9,7 +9,7 @@
         </div>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-side-icon class="hidden-xl-only hidden-lg-only hidden-md-only"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.native="$emit('switchNavigationDrawer')" class="hidden-xl-only hidden-lg-only hidden-md-only"/>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn to="/" flat class="link-button-section">
           <div class="link-text">

@@ -2,9 +2,15 @@
   <v-app>
     <v-content style="background-color: #ffffff;">
 
-      <!-- navigation drawer component -->
+      <navigation-drawer-component
+        :drawer="drawer"
+        @switchNavigationDrawer="switchNavigationDrawer"
+        @updateNavigationDrawerValue="updateNavigationDrawerValue"
+      />
 
-      <toolbar-header-component/>
+      <toolbar-header-component
+        @switchNavigationDrawer="switchNavigationDrawer"
+      />
 
       <v-container fluid class="container">
         <nuxt />
@@ -15,16 +21,25 @@
 
 <script>
 import ToolbarHeader from '../components/toolbar-header.vue';
+import NavigationDrawer from '../components/navigation-drawer.vue';
 
 export default {
   components: {
-    'toolbar-header-component': ToolbarHeader
+    'toolbar-header-component': ToolbarHeader,
+    'navigation-drawer-component': NavigationDrawer
   },
   data() {
     return {
+      drawer: false
     }
   },
   methods: {
+    switchNavigationDrawer() {
+      this.drawer = !this.drawer;
+    },
+    updateNavigationDrawerValue(value) {
+      this.drawer = value;
+    }
   },
 }
 </script>
