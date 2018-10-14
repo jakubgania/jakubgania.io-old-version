@@ -7,8 +7,8 @@
     temporary
     class=""
   >
-    <v-list class="">
-      <div class="">
+    <v-list class="list-section">
+      <div class="logo-section">
         <v-icon
           class="close-menu-icon"
           @click="$emit('switchNavigationDrawer')"
@@ -27,12 +27,12 @@
           :key="menuItem.id"
           :to="menuItem.path"
         >
-          <v-list-tile-action class="">
-            <v-icon class="">keyboard_arrow_right</v-icon>
+          <v-list-tile-action class="selected-icon">
+            <v-icon class="list-menu-icon">keyboard_arrow_right</v-icon>
           </v-list-tile-action>
-          <v-list-tile-content class="">
+          <v-list-tile-content class="selected-text">
             <v-list-tile-title
-              class=""
+              class="list-menu-text"
               v-html="menuItem.title"
             />
           </v-list-tile-content>
@@ -58,6 +58,10 @@ export default {
           path: '/'
         },
         {
+          title: "O mnie",
+          path: '/about'
+        },
+        {
           title: "Projekty",
           path: '/projects'
         },
@@ -78,11 +82,45 @@ export default {
       },
     },
   },
-  methods: {
-    //
-  },
 }
 </script>
 
 <style lang="scss"scoped>
+.list-section
+{
+  padding: 0;
+}
+.logo-section
+{
+  height: 56px;
+  line-height: 56px;
+}
+.close-menu-icon
+{
+  float: right;
+  margin-right: 20px;
+  line-height: 56px;
+  font-size: 30px;
+  color: #000000;
+  cursor: default;
+}
+.selected-icon
+{
+  color: #252bfc !important;
+}
+.selected-text
+{
+  color: #000000 !important;
+}
+.list-menu-icon
+{
+  margin-left: 3px;
+}
+.list-menu-text
+{
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #585858;
+}
 </style>
