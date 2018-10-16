@@ -7,7 +7,7 @@
     </v-flex>
     <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg8 offset-lg2 style="margin-bottom:80px;">
       <div class="" style="font-size:24px;margin-top:60px;text-align:center;">
-        Na tej podstronie będą pojawiać się linki do różnych stron.
+        Ciekawe strony, portale, blogi, oprogramowanie oraz inne zasoby.
       </div>
     </v-flex>
     <v-flex
@@ -38,8 +38,10 @@
               {{ resource.title ? index + 1 + ". " + resource.title : index + 1 + ". " + resource.url }}
             </a>
           </div>
-          <div v-if="resource.description" class="" style="">
-            {{ resource.description }}
+          <div v-if="resource.description" class="">
+            <div class="" style="padding-bottom:20px;font-size:16px;">
+              {{ resource.description }}
+            </div>
           </div>
         </v-flex>
       </v-layout>
@@ -58,9 +60,20 @@ export default {
   },
   head() {
     return {
-      title: 'Jakub Gania - Inne'
+      title: 'Jakub Gania - Inne',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Ciekawe strony, portale, blogi, oprogramowanie oraz inne zasoby.'
+        },
+        {
+          name: 'keywords',
+          content: 'software, other, resources, pages, it, blogs, tutorials, programming'
+        },
+      ]
     }
-  }
+  },
 }
 </script>
 
