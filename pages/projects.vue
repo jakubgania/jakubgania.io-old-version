@@ -21,7 +21,18 @@
 export default {
   head() {
     return {
-      title: 'Jakub Gania - Projekty'
+      title: 'Jakub Gania - Projekty',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Jakub Gania - Projekty'
+        },
+        {
+          name: 'keywords',
+          content: 'projects'
+        },
+      ]
     }
   }
 }
