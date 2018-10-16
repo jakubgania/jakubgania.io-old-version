@@ -15,6 +15,9 @@
       <v-container fluid class="container">
         <nuxt />
       </v-container>
+
+      <footer-component/>
+
     </v-content>
   </v-app>
 </template>
@@ -22,11 +25,13 @@
 <script>
 import ToolbarHeader from '../components/toolbar-header.vue';
 import NavigationDrawer from '../components/navigation-drawer.vue';
+import Footer from '../components/footer.vue';
 
 export default {
   components: {
     'toolbar-header-component': ToolbarHeader,
-    'navigation-drawer-component': NavigationDrawer
+    'navigation-drawer-component': NavigationDrawer,
+    'footer-component': Footer,
   },
   data() {
     return {
