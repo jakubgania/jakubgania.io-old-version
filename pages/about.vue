@@ -26,11 +26,11 @@
                   {{ descriptions.description1 }}
                 </div>
               </v-flex>
-              <!-- <v-flex xs12 lg12 style="margin-top:20px;margin-bottom:20px;">
+              <v-flex xs12 lg12 style="margin-top:20px;margin-bottom:20px;">
                 <div class="description">
                   {{ descriptions.description2 }}
                 </div>
-              </v-flex> -->
+              </v-flex>
               <v-flex lg12 class="link-section">
                 <v-layout row wrap>
                   <v-flex lg3 style="text-align:center;">
@@ -85,8 +85,9 @@ export default {
       profileImage,
       descriptions : {
         'name' : 'Jakub Gania',
-        'description1' : 'Nazywam się Jakub Gania. W 2018 roku uzyskałem tytuł inżyniera informatki z specjalizacją inżyniera systemów informatycznych. Specjalizuję sie w technologiach webowych. Mieszkam we Wrocławiu.',
-        'description2' : 'Prywatnie interesują mnie nowe technologie, startupy i bardzo lubię fotografować. Czytam książki o   . . .  oraz przeglądam portale technologiczne.',
+        'description1' : 'Nazywam się Jakub Gania. W 2018 roku uzyskałem tytuł inżyniera informatki z specjalizacją inżyniera systemów informatycznych. Specjalizuję sie w technologiach webowych. Moje projekty udostępniam na platformie GitHub. Mieszkam we Wrocławiu.',
+        'description2' : 'Prywatnie interesują mnie nowe technologie, startupy i bardzo lubię fotografować.',
+        // 'description2' : 'Prywatnie interesują mnie nowe technologie, startupy i bardzo lubię fotografować. Czytam książki o   . . .  oraz przeglądam portale technologiczne.',
       },
     }
   },
@@ -94,10 +95,10 @@ export default {
     photoSize() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs': return '180';
-        // case 'sm': return '400'
-        // case 'md': return '500'
+        case 'sm': return '180';
+        case 'md': return '180';
         case 'lg': return '200';
-        // case 'xl': return '800'
+        case 'xl': return '200';
         default: return '200';
       }
     }
