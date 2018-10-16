@@ -107,7 +107,9 @@
       {
         "section_name": "Blogi",
         "resource_addresses": [
-
+          {
+            "url": "https://www.flynerd.pl/"
+          }
         ]
       },
       {
@@ -126,12 +128,24 @@
             "url": "https://www.youtube.com/user/MiroslawZelent/videos"
           },
           {
+            "title": "WarsawJS",
+            "url": "https://www.youtube.com/channel/UCzYf3wdKSKnR5lvkRVUyCYg/videos"
+          },
+          {
+            "title": "Warsaw JUG",
+            "url": "https://www.youtube.com/channel/UC2coGyxf5x_CzJ3l4F-N-Sw/videos"
+          },
+          {
             "title": "Samuraj Programowania",
             "url": "https://www.youtube.com/channel/UC6wlzVp-5TD5xfDwiohSDeg/videos"
           },
           {
             "title": "Artur Czuba",
             "url": "https://www.youtube.com/user/CzubaArtur/videos"
+          },
+          {
+            "title": "PHPers",
+            "url": "https://www.youtube.com/user/PHPersPL/videos"
           }
         ]
       },
@@ -154,6 +168,55 @@
           },
           {
             "url": "https://bitcoin.pl/"
+          }
+        ]
+      },
+      {
+        "section_name": "GitHub commands",
+        "resource_addresses": [
+          {
+            "title": "git init",
+            "description": "Initialize a local Git repository"
+          },
+          {
+            "title": "git log",
+            "description": "View changes"
+          },
+          {
+            "title": "git add .",
+            "description": "All files in the folder"
+          },
+          {
+            "title": "git add [file name]",
+            "description": "Add a file to the staging area"
+          },
+          {
+            "title": "git add -p",
+            "description": "Show all changes in file"
+          },
+          {
+            "title": "git status",
+            "description": "Check status"
+          },
+          {
+            "title": "git commit -m \"description\" ",
+            "description": "Commit changes"
+          },
+          {
+            "title": "git pull origin [branch name]",
+            "description": "Pull changes from remote repository"
+          },
+          {
+            "title": "git push origin [branch name]",
+            "description": "Push a branch to your remote repository"
+          },
+          {
+            "title": "git remote add origin [repository path]",
+            "description": "Add a remote repository"
+          },
+          {
+            "title": "git clone [repository path] [folder name]",
+            "description": "Create a local copy of a remote repository in folder - folder name optional"
           }
         ]
       }
