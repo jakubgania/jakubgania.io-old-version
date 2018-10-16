@@ -22,7 +22,18 @@
 export default {
   head() {
     return {
-      title: 'Jakub Gania - Kontakt'
+      title: 'Jakub Gania - Kontakt',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Jakub Gania - Kontakt'
+        },
+        {
+          name: 'keywords',
+          content: 'contact, contact form, message, email'
+        },
+      ]
     }
   }
 }
