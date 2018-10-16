@@ -13,7 +13,7 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn to="/" flat class="link-button-section">
           <div class="link-text">
-            Strona główna
+            Home
           </div>
         </v-btn>
         <v-btn to="/about" flat class="link-button-section">
@@ -73,7 +73,7 @@ export default {
 .link-text
 {
   font-size: 12px;
-  font-weight: 700;
+  // font-weight: 700;
   letter-spacing: 2px;
   color: #000000;
 }

@@ -2,10 +2,10 @@
   <v-layout row wrap class="template-layout">
     <v-flex xs12 sm10 offset-sm1 md10 offset-md1 lg8 offset-lg2>
       <v-layout row wrap class="information-container">
-        <v-flex xs12 lg8 offset-lg2>
+        <v-flex lg12>
           <div class="information-section">
             <v-layout row wrap>
-              <v-flex xs12 lg12>
+              <v-flex xs12 md10 offset-md1 lg12>
                 <v-layout row wrap>
                   <v-flex xs12 lg4>
                     <div class="image-section" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
@@ -21,12 +21,12 @@
                   </v-flex>
                 </v-layout>
               </v-flex>
-              <v-flex xs12 lg12 style="margin-bottom:20px;">
+              <v-flex xs12 sm8 offset-sm2 md8 offset-md2 lg8 offset-lg2 style="margin-bottom:20px;">
                 <div class="description" data-aos="fade-left" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
                   {{ descriptions.description1 }}
                 </div>
               </v-flex>
-              <v-flex xs12 lg12 style="margin-top:20px;margin-bottom:20px;">
+              <v-flex xs12 sm8 offset-sm2 md8 offset-md2 lg8 offset-lg2 style="margin-top:20px;margin-bottom:20px;">
                 <div class="description">
                   {{ descriptions.description2 }}
                 </div>
@@ -88,5 +88,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../assets/scss/about/lg.scss';
+  @import '../assets/scss/about/md.scss';
+  @import '../assets/scss/about/sm.scss';
   @import '../assets/scss/about/xs.scss';
 </style>
