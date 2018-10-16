@@ -79,69 +79,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.projects-layout
-{
-  padding-bottom: 80px;
-}
-.page-title
-{
-  font-size: 42px;
-  margin-top: 140px;
-  text-align: center;
-}
-.page-description
-{
-  font-size: 24px;
-  margin-top: 60px;
-  text-align: center;
-  margin-bottom: 80px;
-}
-.links-section
-{
-  border-bottom: 1px solid #dedede;
-  padding-bottom: 10px;
-}
-.link-section-title
-{
-  font-size: 22px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  letter-spacing: 2px;
-}
-.link-resource-section
-{
-  font-size: 18px;
-  padding-bottom: 10px;
-}
-.link-resource
-{
-  text-decoration: none;
-
-  &:hover
-  {
-    color: #01aca7;
-  }
-}
-.resource-description
-{
-  padding-bottom: 20px;
-  font-size: 16px;
-}
-@media only screen and (max-width: 600px)
-{
-  .projects-layout
-  {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .page-title
-  {
-    margin-top: 60px;
-  }
-  .page-description
-  {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}
+@import '../assets/scss/other-resources/lg.scss';
+// @import '../assets/scss/other-resources/md.scss';
+// @import '../assets/scss/other-resources/sm.scss';
+@import '../assets/scss/other-resources/xs.scss';
 </style>
