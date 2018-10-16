@@ -46,7 +46,18 @@
 export default {
   head() {
     return {
-      title : 'Jakub Gania - Software Developer'
+      title : 'Jakub Gania - Software Developer',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Jakub Gania - Software Developer'
+        },
+        {
+          name: 'keywords',
+          content: 'software, developer, programmer, coder, web, frontend, backend, full stack'
+        },
+      ]
     }
   }
 }
