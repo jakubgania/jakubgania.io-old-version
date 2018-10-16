@@ -20,6 +20,7 @@
       offset-md3
       lg6
       offset-lg3
+      style="border-bottom:1px solid #dedede;padding-bottom:10px;"
     >
       <div class="" style="font-size:22px;padding-top:20px;padding-bottom:20px;letter-spacing:2px;">
         {{ link.section_name }}

@@ -50,6 +50,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/scss/scrollbar.scss';
+
 .container
 {
   padding: 0;

@@ -23,6 +23,9 @@
           },
           {
             "url": "https://validator.w3.org/"
+          },
+          {
+            "url": "https://getbootstrap.com/"
           }
         ]
       },
@@ -187,7 +190,7 @@
           },
           {
             "title": "git add .",
-            "description": "All files in the folder"
+            "description": "Add all files in the folder"
           },
           {
             "title": "git add [file name]",

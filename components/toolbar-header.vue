@@ -58,6 +58,8 @@ export default {
 <style lang="scss">
 .link-button-section
 {
+  border-radius: 0px;
+
   &:hover
   {
     background-color: #000000;
