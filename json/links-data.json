@@ -109,6 +109,9 @@
         "resource_addresses": [
           {
             "url": "https://www.flynerd.pl/"
+          },
+          {
+            "url": "http://antenna.io/blog"
           }
         ]
       },

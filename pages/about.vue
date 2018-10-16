@@ -31,47 +31,11 @@
                   {{ descriptions.description2 }}
                 </div>
               </v-flex>
-              <v-flex lg12 class="link-section">
-                <v-layout row wrap>
-                  <v-flex lg3 style="text-align:center;">
-                    <nuxt-link to="/" class="link">
-                      <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-                        Strona główna
-                      </div>
-                    </nuxt-link>
-                  </v-flex>
-                  <v-flex lg3 style="text-align:center;">
-                    <nuxt-link to="/projects" class="link">
-                      <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-                        Projekty
-                      </div>
-                    </nuxt-link>
-                  </v-flex>
-                  <v-flex lg3 style="text-align:center;">
-                    <a href="https://github.com/jakubgania" target="_blank" class="link">
-                      <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-                        Github
-                      </div>
-                    </a>
-                  </v-flex>
-                  <v-flex lg3 style="text-align:center;">
-                    <a href="https://www.linkedin.com/in/jakubgania" target="_blank" class="link">
-                      <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-                        LinkedIn
-                      </div>
-                    </a>
-                  </v-flex>
-                </v-layout>
-              </v-flex>
             </v-layout>
           </div>
         </v-flex>
       </v-layout>
     </v-flex>
-
-    <div class="copyright">
-      Copyright &copy 2018 Jakub Gania
-    </div>
 
   </v-layout>
 </template>

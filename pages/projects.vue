@@ -37,3 +37,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.projects-layout
+{
+  min-height: calc(100vh - 164px);
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <v-layout row wrap class="projects-layout">
+  <v-layout row wrap class="contact-layout">
     <v-flex xs12 sm12 md12 lg8 offset-lg2>
       <div class="" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="800" data-aos-once="true">
         <div class="" style="font-size:42px;margin-top:140px;text-align:center;">
@@ -40,6 +40,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.contact-layout
+{
+  min-height: calc(100vh - 164px);
+}
 .email-tag
 {
   padding: 6px;
