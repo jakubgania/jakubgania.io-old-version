@@ -104,7 +104,18 @@ export default {
   },
   head() {
     return {
-      title: 'Jakub Gania - O mnie'
+      title: 'Jakub Gania - O mnie',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Trochę informacji o mnie.'
+        },
+        {
+          name: 'keywords',
+          content: 'about, me, information, description'
+        },
+      ]
     }
   }
 }
