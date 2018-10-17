@@ -20,6 +20,10 @@
   border-bottom: 1px solid #dedede;
   padding-bottom: 10px;
 }
+.links-section:last-child
+{
+  border-bottom: none;
+}
 .link-section-title
 {
   font-size: 22px;
