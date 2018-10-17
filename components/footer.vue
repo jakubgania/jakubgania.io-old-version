@@ -33,37 +33,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.footer-container
-{
-  // background-color: #fafafa;
-}
-.footer-section
-{
-  border-top: 1px solid #e3e3e3;
-}
-.link
-{
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-size: 14px;
-  height: 100px;
-  line-height: 100px;
-}
-.text
-{
-  text-align: right;
-}
-@media only screen and (max-width: 600px)
-{
-  .link
-  {
-    text-align: center;
-    height: 60px;
-    line-height: 60px;
-  }
-  .text
-  {
-    text-align: center;
-  }
-}
+@import '../assets/scss/footer/lg.scss';
+@import '../assets/scss/footer/xs.scss';
 </style>
