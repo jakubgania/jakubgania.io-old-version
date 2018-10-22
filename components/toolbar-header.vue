@@ -36,6 +36,11 @@
             Inne
           </div>
         </v-btn>
+        <v-btn to="/photos" flat class="link-button-section">
+          <div class="link-text">
+            Zdjęcia
+          </div>
+        </v-btn>
       </v-toolbar-items>
     </v-toolbar>
   </div>

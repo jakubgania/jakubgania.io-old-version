@@ -72,6 +72,10 @@ export default {
         {
           title: "Inne",
           path: '/other-resources'
+        },
+        {
+          title: "Zdjęcia",
+          path: '/photos'
         }
       ]
     }
