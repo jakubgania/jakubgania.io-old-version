@@ -1,7 +1,7 @@
 {
     "links_data": [
       {
-        "id": "programming",
+        "section_id": "programming",
         "section_name": "Programowanie",
         "resource_addresses": [
           {
@@ -31,7 +31,7 @@
         ]
       },
       {
-        "id": "software",
+        "section_id": "software",
         "section_name": "Software",
         "resource_addresses": [
           {
@@ -79,7 +79,7 @@
         ]
       },
       {
-        "id": "google",
+        "section_id": "google",
         "section_name": "Google",
         "resource_addresses": [
           {
@@ -94,7 +94,7 @@
         ]
       },
       {
-        "id": "technology-portals",
+        "section_id": "technology-portals",
         "section_name": "Portale technologiczne",
         "resource_addresses": [
           {
@@ -115,7 +115,7 @@
         ]
       },
       {
-        "id": "blogs",
+        "section_id": "blogs",
         "section_name": "Blogi",
         "resource_addresses": [
           {
@@ -127,7 +127,7 @@
         ]
       },
       {
-        "id": "youtube",
+        "section_id": "youtube",
         "section_name": "Youtube",
         "resource_addresses": [
           {
@@ -165,7 +165,7 @@
         ]
       },
       {
-        "id": "security",
+        "section_id": "security",
         "section_name": "Bezpieczeństwo",
         "resource_addresses": [
           {
@@ -177,7 +177,7 @@
         ]
       },
       {
-        "id": "cryptocurrency",
+        "section_id": "cryptocurrency",
         "section_name": "Kryptowaluty",
         "resource_addresses": [
           {
@@ -189,7 +189,7 @@
         ]
       },
       {
-        "id": "programming-tasks",
+        "section_id": "programming-tasks",
         "section_name": "Programming tasks",
         "resource_addresses": [
           {
@@ -198,7 +198,7 @@
         ]
       },
       {
-        "id": "github-commands",
+        "section_id": "github-commands",
         "section_name": "GitHub commands",
         "resource_addresses": [
           {

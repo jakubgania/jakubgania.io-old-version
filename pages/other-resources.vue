@@ -33,7 +33,7 @@
       lg6
       offset-lg3
     >
-      <a :href="'#' + link.id" style="text-decoration: none;">
+      <a :href="'#' + link.section_id" style="text-decoration: none;">
         <div class="listing-link">
           {{ link.section_name }}
         </div>
