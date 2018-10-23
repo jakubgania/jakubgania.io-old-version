@@ -1,6 +1,7 @@
 {
     "links_data": [
       {
+        "id": "programming",
         "section_name": "Programowanie",
         "resource_addresses": [
           {
@@ -30,6 +31,7 @@
         ]
       },
       {
+        "id": "software",
         "section_name": "Software",
         "resource_addresses": [
           {
@@ -77,6 +79,7 @@
         ]
       },
       {
+        "id": "google",
         "section_name": "Google",
         "resource_addresses": [
           {
@@ -91,6 +94,7 @@
         ]
       },
       {
+        "id": "technology-portals",
         "section_name": "Portale technologiczne",
         "resource_addresses": [
           {
@@ -111,6 +115,7 @@
         ]
       },
       {
+        "id": "blogs",
         "section_name": "Blogi",
         "resource_addresses": [
           {
@@ -122,6 +127,7 @@
         ]
       },
       {
+        "id": "youtube",
         "section_name": "Youtube",
         "resource_addresses": [
           {
@@ -159,6 +165,7 @@
         ]
       },
       {
+        "id": "security",
         "section_name": "Bezpieczeństwo",
         "resource_addresses": [
           {
@@ -170,6 +177,7 @@
         ]
       },
       {
+        "id": "cryptocurrency",
         "section_name": "Kryptowaluty",
         "resource_addresses": [
           {
@@ -181,6 +189,16 @@
         ]
       },
       {
+        "id": "programming-tasks",
+        "section_name": "Programming tasks",
+        "resource_addresses": [
+          {
+            "url": "https://pl.spoj.com/"
+          }
+        ]
+      },
+      {
+        "id": "github-commands",
         "section_name": "GitHub commands",
         "resource_addresses": [
           {

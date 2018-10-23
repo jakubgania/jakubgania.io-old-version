@@ -11,6 +11,45 @@
       </div>
     </v-flex>
     <v-flex
+      xs12
+      sm8
+      offset-sm2
+      md6
+      offset-md3
+      lg6
+      offset-lg3
+      style="font-size:22px;padding-bottom:24px;letter-spacing: 2px;"
+    >
+      Kategorie
+    </v-flex>
+    <v-flex
+      v-for="(link, index) in linksData"
+      :key="link.id"
+      xs12
+      sm8
+      offset-sm2
+      md6
+      offset-md3
+      lg6
+      offset-lg3
+    >
+      <a :href="'#' + link.id" style="text-decoration: none;">
+        <div class="listing-link">
+          {{ link.section_name }}
+        </div>
+      </a>
+    </v-flex>
+    <v-flex
+      xs12
+      sm8
+      offset-sm2
+      md6
+      offset-md3
+      lg6
+      offset-lg3
+      style="margin-bottom:80px;"
+    ></v-flex>
+    <v-flex
       v-for="(link, index) in linksData"
       :key="link.id"
       xs12
@@ -22,7 +61,7 @@
       offset-lg3
       class="links-section"
     >
-      <div class="link-section-title">
+      <div class="link-section-title" :id="link.id">
         {{ link.section_name }}
       </div>
       <v-layout row wrap>
