@@ -1,11 +1,27 @@
 <template>
   <v-layout row wrap class="projects-layout">
-    <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg8 offset-lg2>
+    <v-flex
+      xs12
+      sm8
+      offset-sm2
+      md8
+      offset-md2
+      lg8
+      offset-lg2
+    >
       <div class="page-title">
         Inne
       </div>
     </v-flex>
-    <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg8 offset-lg2>
+    <v-flex
+      xs12
+      sm8
+      offset-sm2
+      md8
+      offset-md2
+      lg8
+      offset-lg2
+    >
       <div class="page-description">
         Ciekawe strony, portale, blogi, oprogramowanie oraz inne zasoby.
       </div>
@@ -14,8 +30,8 @@
       xs12
       sm8
       offset-sm2
-      md6
-      offset-md3
+      md8
+      offset-md2
       lg6
       offset-lg3
       style="font-size:22px;padding-bottom:24px;letter-spacing: 2px;"
@@ -28,8 +44,8 @@
       xs12
       sm8
       offset-sm2
-      md6
-      offset-md3
+      md8
+      offset-md2
       lg6
       offset-lg3
     >
@@ -43,8 +59,8 @@
       xs12
       sm8
       offset-sm2
-      md6
-      offset-md3
+      md8
+      offset-md2
       lg6
       offset-lg3
       style="margin-bottom:80px;"
@@ -55,13 +71,13 @@
       xs12
       sm8
       offset-sm2
-      md6
-      offset-md3
+      md8
+      offset-md2
       lg6
       offset-lg3
       class="links-section"
     >
-      <div class="link-section-title" :id="link.id">
+      <div class="link-section-title" :id="link.section_id">
         {{ link.section_name }}
       </div>
       <v-layout row wrap>
@@ -75,7 +91,8 @@
         >
           <div class="link-resource-section">
             <a :href="resource.url" target="_blank" class="link-resource">
-              {{ resource.title ? index + 1 + ". " + resource.title : index + 1 + ". " + resource.url }}
+              {{ resource.title ? index + 1 + ". " + resource.title :
+                 index + 1 + ". " + resource.url }}
             </a>
           </div>
           <div v-if="resource.description">

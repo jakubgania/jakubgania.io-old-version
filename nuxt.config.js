@@ -12,7 +12,8 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
-      { name: "theme-color", content: "#000000" }
+      { name: 'theme-color', content: "#000000" },
+      { name: 'google-site-verification', content: 'kmb1ayhGB4R-dOAzlxeLZarrP96-nNZ_KE1tpGInl8k' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
