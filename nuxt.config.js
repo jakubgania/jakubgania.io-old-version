@@ -16,7 +16,8 @@ module.exports = {
       { name: 'google-site-verification', content: 'kmb1ayhGB4R-dOAzlxeLZarrP96-nNZ_KE1tpGInl8k' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: 'shortcut icon', type: 'image/png', href: '/favicon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700' }
     ]
