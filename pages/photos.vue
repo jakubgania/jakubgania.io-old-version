@@ -1,13 +1,29 @@
 <template>
   <v-layout row wrap class="projects-layout">
-    <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
+    <v-flex
+      xs12
+      sm6
+      offset-sm3
+      md8
+      offset-md2
+      lg8
+      offset-lg2
+    >
       <div class="title-page">
         Zdjęcia
       </div>
     </v-flex>
-    <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
-      <div class="" style="font-size:24px;text-align:center;">
-        Na tej podstronie będą pojawiać się zdjęcia.
+    <v-flex
+      xs12
+      sm6
+      offset-sm3
+      md8
+      offset-md2
+      lg8
+      offset-lg2
+    >
+      <div class="subtitle">
+        Na tej stronie będą pojawiać się wykonane przeze mnie zdjęcia.
       </div>
     </v-flex>
     <v-flex
@@ -64,7 +80,7 @@
             <v-icon color="black">close</v-icon>
           </v-btn>
         </v-toolbar>
-        <img :src="src" alt="" class="full-size-photo">
+        <img :src="src" class="full-size-photo">
       </v-card>
     </v-dialog>
 
@@ -78,6 +94,14 @@ export default {
       fullScreenPhoto: false,
       src: null,
       photoDetails: [
+        {
+          thumbnail: 'https://jakubgania.io/images/full-size/w2e.jpg',
+          src: 'https://jakubgania.io/images/full-size/w2e.jpg'
+        },
+        {
+          thumbnail: 'https://jakubgania.io/images/full-size/w3e.jpg',
+          src: 'https://jakubgania.io/images/full-size/w3e.jpg'
+        },
         {
           thumbnail: 'https://jakubgania.io/images/full-size/q2.png',
           src: 'https://jakubgania.io/images/full-size/q2.png'
