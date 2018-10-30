@@ -1,17 +1,13 @@
 <template>
   <v-layout row wrap class="projects-layout">
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
-      <div class="image-section" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="800" data-aos-once="true">
-        <div class="" style="font-size:42px;margin-top:140px;text-align:center;">
-          Zdjęcia
-        </div>
+      <div class="" style="font-size:42px;margin-top:140px;text-align:center;">
+        Zdjęcia
       </div>
     </v-flex>
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
-      <div class="image-section" data-aos="fade-up" data-aos-delay="440" data-aos-duration="1200" data-aos-once="true">
-        <div class="" style="font-size:24px;text-align:center;">
-          Na tej podstronie będą pojawiać się zdjęcia.
-        </div>
+      <div class="" style="font-size:24px;text-align:center;">
+        Na tej podstronie będą pojawiać się zdjęcia.
       </div>
     </v-flex>
     <v-flex xs12 sm10 offset-sm1 md10 offset-md1 lg10 offset-lg1>
@@ -26,18 +22,35 @@
             :key="thumbnail.id"
             class=""
           >
-            <!-- <v-card tile>
-              <v-card-media
-                :src="photoDetails[index].thumbnail"
-                height="220px"
-              >
-              </v-card-media>
-            </v-card> -->
-            {{ thumbnail }}
+            <v-img
+              :src="photoDetails[index].thumbnail"
+              @click="setDetailsPhoto(index)"
+              aspect-ratio="1.6"
+            >
+              <v-layout
+                slot="placeholder"
+                fill-height
+                align-center
+                justify-center
+                ma-0
+                >
+                <v-progress-circular indeterminate color="blue"></v-progress-circular>
+              </v-layout>
+            </v-img>
           </v-flex>
         </v-layout>
       </v-container>
     </v-flex>
+
+    <transition name="fade">
+      <div v-if="fullScreenPhoto" @keydown.esc="closePhotoDetails()" tabindex="0" class="desktop-full-screen-photo">
+        <v-icon right @click="closePhotoDetails()" class="card-button">
+          close
+        </v-icon>
+        <img :src="src" alt="" class="full-size-photo">
+      </div>
+    </transition>
+
   </v-layout>
 </template>
 
@@ -45,13 +58,42 @@
 export default {
   data () {
     return {
+      fullScreenPhoto: false,
+      src: null,
       photoDetails: [
-        'img1',
-        'img2',
-        'img3',
-        'img4'
+        {
+          thumbnail: 'https://jakubgania.io/images/full-size/q2.png',
+          src: 'https://jakubgania.io/images/full-size/q2.png'
+        },
+        {
+          thumbnail: 'https://jakubgania.io/images/full-size/1q.png',
+          src: 'https://jakubgania.io/images/full-size/1q.png'
+        },
+        {
+          thumbnail: 'https://jakubgania.io/images/full-size/kuba.JPG',
+          src: 'https://jakubgania.io/images/full-size/kuba.JPG'
+        }
       ]
     }
+  },
+  methods: {
+    setDetailsPhoto(index) {
+      var details = this.photoDetails[index];
+      // this.updateURL(this.basicClientAddress + '/' + this.$i18n.locale + this.resourcePath + details.id);
+      this.src = details.src;
+      // this.$store.dispatch('photos/getPhotoDeatils', details.id);
+      // this.titleHeaderPage = 'Yourcity - ' + details.id;
+      this.fullScreenPhoto = true;
+    },
+    closePhotoDetails() {
+      this.fullScreenPhoto = false;
+      // this.titleHeaderPage = 'Yourcity - Galeria';
+      // this.updateURL(this.basicClientAddress + '/' + this.$i18n.locale + this.resourcePath);
+    },
+    // updateURL(newUrl) {
+    //   var stateObject = {foo: 'bar'};
+    //   history.pushState(stateObject, 'page', newUrl);
+    // }
   },
   head() {
     return {
@@ -76,5 +118,65 @@ export default {
 .projects-layout
 {
   min-height: calc(100vh - 164px);
+}
+
+.fade-enter-active, .fade-leave-active
+{
+    transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to
+{
+    opacity: 0;
+}
+
+.paging-button
+{
+    font-weight: bold;
+
+    margin-top: 60px;
+    background-color: #000000 !important;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+.desktop-full-screen-photo
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 999;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+
+    html, body
+    {
+        overflow: hidden !important;
+    }
+}
+.full-size-photo
+{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+
+    // width: 80%;
+    // max-width: 1000px;
+    height: auto;
+    max-height: 90%;
+    display: block;
+    margin: auto;
+}
+.card-button
+{
+    position: absolute;
+    right: 0px;
+    margin-top: 16px;
+    margin-right: 16px;
+    font-size: 40px;
+    color: #000000;
 }
 </style>
