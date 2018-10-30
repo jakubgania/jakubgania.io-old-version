@@ -42,15 +42,6 @@
       </v-container>
     </v-flex>
 
-    <!-- <transition name="fade">
-      <div v-if="fullScreenPhoto" @keydown.esc="closePhotoDetails()" tabindex="0" class="desktop-full-screen-photo">
-        <v-icon right @click="closePhotoDetails()" class="card-button">
-          close
-        </v-icon>
-        <img :src="src" alt="" class="full-size-photo">
-      </div>
-    </transition> -->
-
     <v-dialog v-model="fullScreenPhoto" fullscreen hide-overlay transition="">
       <v-card>
         <v-toolbar color="" style="box-shadow:none;background-color:white;">
@@ -90,21 +81,12 @@ export default {
   methods: {
     setDetailsPhoto(index) {
       var details = this.photoDetails[index];
-      // this.updateURL(this.basicClientAddress + '/' + this.$i18n.locale + this.resourcePath + details.id);
       this.src = details.src;
-      // this.$store.dispatch('photos/getPhotoDeatils', details.id);
-      // this.titleHeaderPage = 'Yourcity - ' + details.id;
       this.fullScreenPhoto = true;
     },
     closePhotoDetails() {
       this.fullScreenPhoto = false;
-      // this.titleHeaderPage = 'Yourcity - Galeria';
-      // this.updateURL(this.basicClientAddress + '/' + this.$i18n.locale + this.resourcePath);
     },
-    // updateURL(newUrl) {
-    //   var stateObject = {foo: 'bar'};
-    //   history.pushState(stateObject, 'page', newUrl);
-    // }
   },
   head() {
     return {
@@ -139,7 +121,6 @@ export default {
 {
     opacity: 0;
 }
-
 .paging-button
 {
     font-weight: bold;
@@ -173,9 +154,7 @@ export default {
     right: 0%;
     left: 0%;
     bottom: 0%;
-
-    // width: 80%;
-    // max-width: 1000px;
+    max-width: 100%;
     height: auto;
     max-height: 86%;
     display: block;
