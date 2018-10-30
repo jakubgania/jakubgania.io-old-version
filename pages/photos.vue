@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap class="projects-layout">
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
-      <div class="" style="font-size:42px;margin-top:140px;text-align:center;">
+      <div class="title-page">
         Zdjęcia
       </div>
     </v-flex>
@@ -10,7 +10,16 @@
         Na tej podstronie będą pojawiać się zdjęcia.
       </div>
     </v-flex>
-    <v-flex xs12 sm10 offset-sm1 md10 offset-md1 lg10 offset-lg1 class="images-section">
+    <v-flex
+      xs12
+      sm10
+      offset-sm1
+      md10
+      offset-md1
+      lg10
+      offset-lg1
+      class="images-section"
+    >
       <v-container fluid grid-list-md>
         <v-layout row wrap>
           <v-flex
@@ -42,9 +51,15 @@
       </v-container>
     </v-flex>
 
-    <v-dialog v-model="fullScreenPhoto" fullscreen hide-overlay transition="">
+    <v-dialog
+      v-model="fullScreenPhoto"
+      fullscreen
+      hide-overlay
+      transition=""
+      @keydown.esc="fullScreenPhoto = false"
+    >
       <v-card>
-        <v-toolbar color="" style="box-shadow:none;background-color:white;">
+        <v-toolbar style="box-shadow:none;background-color:white;">
           <v-btn icon @click.native="fullScreenPhoto = false">
             <v-icon color="black">close</v-icon>
           </v-btn>
@@ -84,9 +99,6 @@ export default {
       this.src = details.src;
       this.fullScreenPhoto = true;
     },
-    closePhotoDetails() {
-      this.fullScreenPhoto = false;
-    },
   },
   head() {
     return {
@@ -108,81 +120,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.projects-layout
-{
-  min-height: calc(100vh - 164px);
-}
-
-.fade-enter-active, .fade-leave-active
-{
-    transition: opacity .3s;
-}
-.fade-enter, .fade-leave-to
-{
-    opacity: 0;
-}
-.paging-button
-{
-    font-weight: bold;
-
-    margin-top: 60px;
-    background-color: #000000 !important;
-    color: #ffffff;
-    letter-spacing: 3px;
-}
-.desktop-full-screen-photo
-{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 1);
-    z-index: 999;
-    top: 0%;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-
-    html, body
-    {
-        overflow: hidden !important;
-    }
-}
-.full-size-photo
-{
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    max-width: 100%;
-    height: auto;
-    max-height: 86%;
-    display: block;
-    margin: auto;
-}
-.card-button
-{
-    position: absolute;
-    right: 0px;
-    margin-top: 16px;
-    margin-right: 16px;
-    font-size: 40px;
-    color: #000000;
-}
-@media only screen and (max-width: 600px)
-{
-  .images-section
-  {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-  .full-size-photo
-  {
-    max-width: 100%;
-    height: auto;
-    max-height: 82vh;
-  }
-}
+@import '../assets/scss/photos/lg.scss';
+@import '../assets/scss/photos/xs.scss';
 </style>

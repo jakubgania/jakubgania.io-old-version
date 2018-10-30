@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px)
+{
+  .images-section
+  {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .full-size-photo
+  {
+    max-width: 100%;
+    height: auto;
+    max-height: 82vh;
+  }
+}
