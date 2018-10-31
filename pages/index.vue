@@ -55,7 +55,7 @@ export default {
         },
         {
           name: 'keywords',
-          content: 'software, developer, programmer, coder, web, frontend, backend, full stack'
+          content: 'software, developer, it, programmer, coder, web, website, frontend, backend, full stack'
         },
       ]
     }

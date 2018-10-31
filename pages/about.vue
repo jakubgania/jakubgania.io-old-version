@@ -87,7 +87,7 @@ export default {
   },
   head() {
     return {
-      title: 'Jakub Gania - O mnie',
+      title: 'Jakub Gania - About',
       meta: [
         {
           hid: 'description',

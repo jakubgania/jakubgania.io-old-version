@@ -95,6 +95,10 @@ export default {
       src: null,
       photoDetails: [
         {
+          thumbnail: 'https://jakubgania.io/images/full-size/p6.png',
+          src: 'https://jakubgania.io/images/full-size/p6.png'
+        },
+        {
           thumbnail: 'https://jakubgania.io/images/full-size/w2e.jpg',
           src: 'https://jakubgania.io/images/full-size/w2e.jpg'
         },
@@ -126,16 +130,16 @@ export default {
   },
   head() {
     return {
-      title: 'Jakub Gania - Zdjęcia',
+      title: 'Jakub Gania - Photos',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Jakub Gania - Zdjęcia'
+          content: 'Galeria zdjęć.'
         },
         {
           name: 'keywords',
-          content: 'photos'
+          content: 'photos, gallery, images'
         },
       ]
     }

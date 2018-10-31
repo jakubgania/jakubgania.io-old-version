@@ -21,12 +21,12 @@
 export default {
   head() {
     return {
-      title: 'Jakub Gania - Projekty',
+      title: 'Jakub Gania - Projects',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Jakub Gania - Projekty'
+          content: 'Moje projekty.'
         },
         {
           name: 'keywords',

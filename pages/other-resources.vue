@@ -117,7 +117,7 @@ export default {
   },
   head() {
     return {
-      title: 'Jakub Gania - Inne',
+      title: 'Jakub Gania - Other resources',
       meta: [
         {
           hid: 'description',
@@ -126,7 +126,7 @@ export default {
         },
         {
           name: 'keywords',
-          content: 'software, other, resources, pages, it, blogs, tutorials, programming'
+          content: 'software, other, resources, pages, it, blogs, tutorials, programming, commands, github, docker'
         },
       ]
     }

@@ -54,7 +54,7 @@
 export default {
   head() {
     return {
-      title: 'Jakub Gania - Kontakt',
+      title: 'Jakub Gania - Contact',
       meta: [
         {
           hid: 'description',

@@ -246,6 +246,40 @@
             "description": "Create a local copy of a remote repository in folder - folder name optional"
           }
         ]
+      },
+      {
+        "section_id": "docker-commands",
+        "section_name": "Docker commands",
+        "resource_addresses": [
+          {
+            "title": "docker ps",
+            "description": "show running container"
+          },
+          {
+            "title": "docker ps -a",
+            "description": "show all containers"
+          },
+          {
+            "title": "docker ps -l",
+            "description": "show last created containers"
+          },
+          {
+            "title": "docker kill $(docker ps -q)",
+            "description": "stop all containers:"
+          },
+          {
+            "title": "docker rm $(docker ps -a -q)",
+            "description": "remove all containers"
+          },
+          {
+            "title": "docker rmi $(docker images -q)",
+            "description": "remove all docker images"
+          },
+          {
+            "title": "docker exec -it [id or container name] bash",
+            "description": "run bash in container"
+          }
+        ]
       }
     ]
 }
