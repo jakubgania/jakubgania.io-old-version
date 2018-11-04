@@ -48,7 +48,7 @@
             class=""
           >
             <v-img
-              :src="photoDetails[index].thumbnail"
+              :src="baseURL + pathSmallSize + photoDetails[index].src"
               @click="setDetailsPhoto(index)"
               aspect-ratio="1.8"
             >
@@ -74,14 +74,15 @@
       transition=""
       @keydown.esc="fullScreenPhoto = false"
     >
-      <v-card>
+      <v-card v-if="src">
         <v-toolbar style="box-shadow:none;background-color:white;">
           <v-btn icon @click.native="fullScreenPhoto = false">
             <v-icon color="black">close</v-icon>
           </v-btn>
         </v-toolbar>
-        <img :src="src" class="full-size-photo">
+        <img :src="baseURL + pathFullSize + src" class="full-size-photo">
       </v-card>
+
     </v-dialog>
 
   </v-layout>
@@ -93,37 +94,103 @@ export default {
     return {
       fullScreenPhoto: false,
       src: null,
+      baseURL: 'https://jakubgania.io',
+      pathFullSize: '/images/full-size/',
+      pathSmallSize: '/images/small-size/',
       photoDetails: [
         {
-          thumbnail: 'https://jakubgania.io/images/full-size/p6.png',
-          src: 'https://jakubgania.io/images/full-size/p6.png'
+          src: 'k0.JPG'
         },
         {
-          thumbnail: 'https://jakubgania.io/images/full-size/w2e.jpg',
-          src: 'https://jakubgania.io/images/full-size/w2e.jpg'
+          src: 'k1.jpg'
         },
         {
-          thumbnail: 'https://jakubgania.io/images/full-size/w3e.jpg',
-          src: 'https://jakubgania.io/images/full-size/w3e.jpg'
+          src: 'k2.png'
         },
         {
-          thumbnail: 'https://jakubgania.io/images/full-size/q2.png',
-          src: 'https://jakubgania.io/images/full-size/q2.png'
+          src: 'k3.jpg'
         },
         {
-          thumbnail: 'https://jakubgania.io/images/full-size/1q.png',
-          src: 'https://jakubgania.io/images/full-size/1q.png'
+          src: 'k5.jpeg'
         },
         {
-          thumbnail: 'https://jakubgania.io/images/full-size/kuba.JPG',
-          src: 'https://jakubgania.io/images/full-size/kuba.JPG'
+          src: 'k6.jpg'
+        },
+        {
+          src: 'k7.jpg'
+        },
+        {
+          src: 'k8.jpg'
+        },
+        {
+          src: 'k9.jpg'
+        },
+        {
+          src: 'k10.jpg'
+        },
+        {
+          src: 'k11.jpg'
+        },
+        {
+          src: 'k12.jpg'
+        },
+        {
+          src: 'k13.jpg'
+        },
+        {
+          src: 'k14.jpg'
+        },
+        {
+          src: 'k15.jpg'
+        },
+        {
+          src: 'k16.jpeg'
+        },
+        {
+          src: 'k17.jpeg'
+        },
+        {
+          src: 'k18.jpeg'
+        },
+        {
+          src: 'k20.jpg'
+        },
+        {
+          src: 'k21.png'
+        },
+        {
+          src: 'k22.png'
+        },
+        {
+          src: 'k23.png'
+        },
+        {
+          src: 'k24.jpeg'
+        },
+        {
+          src: 'k25.jpeg'
+        },
+        {
+          src: 'k26.jpeg'
+        },
+        {
+          src: 'k27.jpeg'
+        },
+        {
+          src: 'k28.jpeg'
+        },
+        {
+          src: 'k29.jpg'
+        },
+        {
+          src: 'k30.jpg'
         }
       ]
     }
   },
   methods: {
     setDetailsPhoto(index) {
-      var details = this.photoDetails[index];
+      let details = this.photoDetails[index];
       this.src = details.src;
       this.fullScreenPhoto = true;
     },

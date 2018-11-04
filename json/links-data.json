@@ -131,6 +131,22 @@
         "section_name": "Youtube",
         "resource_addresses": [
           {
+            "title": "overment",
+            "url": "https://www.youtube.com/channel/UC_MIaHmSkt9JHNZfQ_gUmrg/videos"
+          },
+          {
+            "title": "PyWaw",
+            "url": "https://www.youtube.com/user/PyWaw/videos"
+          },
+          {
+            "title": "devstyle_pl - Maciej Aniserowicz",
+            "url": "https://www.youtube.com/channel/UCACp5rqV3Ki0SNdXWDBLhRA/videos"
+          },
+          {
+            "title": "JavaDevMatt - Mateusz Kupilas",
+            "url": "https://www.youtube.com/user/JavaDevMatt/videos"
+          },
+          {
             "title": "Google Developers",
             "url": "https://www.youtube.com/user/GoogleDevelopers/videos"
           },
