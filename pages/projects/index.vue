@@ -14,6 +14,13 @@
         </div>
       </div>
     </v-flex>
+    <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
+      <div class="image-section" data-aos="fade-up" data-aos-delay="440" data-aos-duration="1200" data-aos-once="true">
+        <div class="" style="font-size:24px;margin-top:60px;text-align:center;">
+          <nuxt-link to="/projects/yourcity" class="">Yourcity</nuxt-link>
+        </div>
+      </div>
+    </v-flex>
   </v-layout>
 </template>
 

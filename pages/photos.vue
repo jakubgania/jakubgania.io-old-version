@@ -99,6 +99,12 @@ export default {
       pathSmallSize: '/images/small-size/',
       photoDetails: [
         {
+          src: 'k31.png'
+        },
+        {
+          src: 'k32.jpg'
+        },
+        {
           src: 'k0.JPG'
         },
         {
