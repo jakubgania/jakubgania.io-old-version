@@ -10,7 +10,7 @@
       offset-lg2
     >
       <div class="title-page">
-        Zdjęcia
+        {{ 'Zdjęcia - ' + photoDetails.length }}
       </div>
     </v-flex>
     <v-flex
@@ -36,7 +36,7 @@
       offset-lg1
       class="images-section"
     >
-      <v-container fluid grid-list-md>
+      <v-container fluid grid-list-xs>
         <v-layout row wrap>
           <v-flex
             xs12
@@ -45,7 +45,6 @@
             lg3
             v-for="(thumbnail, index) in photoDetails"
             :key="thumbnail.id"
-            class=""
           >
             <v-img
               :src="baseURL + pathSmallSize + photoDetails[index].src"
@@ -75,7 +74,7 @@
       @keydown.esc="fullScreenPhoto = false"
     >
       <v-card v-if="src">
-        <v-toolbar style="box-shadow:none;background-color:white;">
+        <v-toolbar style="box-shadow:none;background-color:#fcfcfc;">
           <v-btn icon @click.native="fullScreenPhoto = false">
             <v-icon color="black">close</v-icon>
           </v-btn>
@@ -89,109 +88,17 @@
 </template>
 
 <script>
+import imagesPaths from '../images-paths.json';
+
 export default {
-  data () {
+  data() {
     return {
       fullScreenPhoto: false,
       src: null,
       baseURL: 'https://jakubgania.io',
       pathFullSize: '/images/full-size/',
       pathSmallSize: '/images/small-size/',
-      photoDetails: [
-        {
-          src: 'k31.png'
-        },
-        {
-          src: 'k32.jpg'
-        },
-        {
-          src: 'k0.JPG'
-        },
-        {
-          src: 'k1.jpg'
-        },
-        {
-          src: 'k2.png'
-        },
-        {
-          src: 'k3.jpg'
-        },
-        {
-          src: 'k5.jpeg'
-        },
-        {
-          src: 'k6.jpg'
-        },
-        {
-          src: 'k7.jpg'
-        },
-        {
-          src: 'k8.jpg'
-        },
-        {
-          src: 'k9.jpg'
-        },
-        {
-          src: 'k10.jpg'
-        },
-        {
-          src: 'k11.jpg'
-        },
-        {
-          src: 'k12.jpg'
-        },
-        {
-          src: 'k13.jpg'
-        },
-        {
-          src: 'k14.jpg'
-        },
-        {
-          src: 'k15.jpg'
-        },
-        {
-          src: 'k16.jpeg'
-        },
-        {
-          src: 'k17.jpeg'
-        },
-        {
-          src: 'k18.jpeg'
-        },
-        {
-          src: 'k20.jpg'
-        },
-        {
-          src: 'k21.png'
-        },
-        {
-          src: 'k22.png'
-        },
-        {
-          src: 'k23.png'
-        },
-        {
-          src: 'k24.jpeg'
-        },
-        {
-          src: 'k25.jpeg'
-        },
-        {
-          src: 'k26.jpeg'
-        },
-        {
-          src: 'k27.jpeg'
-        },
-        {
-          src: 'k28.jpeg'
-        },
-        {
-          src: 'k29.jpg'
-        },
-        {
-          src: 'k30.jpg'
-        }
-      ]
+      photoDetails: imagesPaths['images-paths'],
     }
   },
   methods: {
