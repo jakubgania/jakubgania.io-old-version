@@ -296,6 +296,22 @@
             "description": "run bash in container"
           }
         ]
+      },
+      {
+        "section_id": "other-commands",
+        "section_name": "Other commands",
+        "resource_addresses": [
+          {
+            "title": "site:website_address",
+            "description": "Checks if the page is indexed in Google."
+          },
+          {
+            "title": "netstat -plntu"
+          },
+          {
+            "title": "rm -rf"
+          }
+        ]
       }
     ]
 }
