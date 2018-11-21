@@ -74,7 +74,7 @@
       @keydown.esc="fullScreenPhoto = false"
     >
       <v-card v-if="src">
-        <v-toolbar style="box-shadow:none;background-color:#fcfcfc;">
+        <v-toolbar style="box-shadow:none;background-color:#ffffff;">
           <v-btn icon @click.native="fullScreenPhoto = false">
             <v-icon color="black">close</v-icon>
           </v-btn>
