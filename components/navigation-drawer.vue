@@ -30,6 +30,7 @@
           <v-list-tile-action class="selected-icon">
             <v-icon class="list-menu-icon">keyboard_arrow_right</v-icon>
           </v-list-tile-action>
+
           <v-list-tile-content class="selected-text">
             <v-list-tile-title
               class="list-menu-text"
@@ -38,6 +39,15 @@
           </v-list-tile-content>
         </v-list-tile>
       </template>
+      <v-list-tile href="https://github.com/jakubgania">
+        <v-list-tile-action class="selected-icon">
+          <v-icon class="list-menu-icon">keyboard_arrow_right</v-icon>
+        </v-list-tile-action>
+
+        <v-list-tile-content class="selected-text">
+          <v-list-tile-title class="list-menu-text">Github</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
     </v-list>
   </v-navigation-drawer>
 </template>
@@ -76,7 +86,7 @@ export default {
         {
           title: "Zdjęcia",
           path: '/photos'
-        }
+        },
       ]
     }
   },
@@ -93,7 +103,7 @@ export default {
 }
 </script>
 
-<style lang="scss"scoped>
+<style lang="scss" scoped>
 .list-section
 {
   padding: 0;

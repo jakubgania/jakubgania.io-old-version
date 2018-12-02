@@ -8,39 +8,21 @@
               <v-flex xs12 md10 offset-md1 lg12>
                 <v-layout row wrap>
                   <v-flex xs12 lg4>
-                    <div
-                      class="image-section"
-                      data-aos="zoom-in"
-                      data-aos-delay="440"
-                      data-aos-duration="1000"
-                      data-aos-once="true"
-                    >
+                    <div class="image-section">
                       <v-avatar :size="photoSize" color="grey lighten-4">
                         <img :src="profileImage" alt="" style="">
                       </v-avatar>
                     </div>
                   </v-flex>
                   <v-flex xs12 lg8 class="description-name-section">
-                    <div
-                      class="description-name"
-                      data-aos="zoom-in"
-                      data-aos-delay="440"
-                      data-aos-duration="1000"
-                      data-aos-once="true"
-                    >
+                    <div class="description-name">
                       {{ descriptions.name }}
                     </div>
                   </v-flex>
                 </v-layout>
               </v-flex>
               <v-flex xs12 sm8 offset-sm2 md8 offset-md2 lg8 offset-lg2 style="margin-bottom:20px;">
-                <div
-                  class="description"
-                  data-aos="fade-left"
-                  data-aos-delay="440"
-                  data-aos-duration="1000"
-                  data-aos-once="true"
-                >
+                <div class="description">
                   {{ descriptions.description1 }}
                 </div>
               </v-flex>

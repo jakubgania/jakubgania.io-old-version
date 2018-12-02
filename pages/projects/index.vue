@@ -1,42 +1,33 @@
 <template>
   <v-layout row wrap class="projects-layout">
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
-      <div
-        class="image-section"
-        data-aos="zoom-in"
-        data-aos-delay="440"
-        data-aos-duration="800"
-        data-aos-once="true"
-      >
-        <div class="title-text">
-          Projekty
-        </div>
+      <div class="title-text">
+        Projekty
       </div>
     </v-flex>
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
-      <div
-        class="image-section"
-        data-aos="zoom-in"
-        data-aos-delay="440"
-        data-aos-duration="1200"
-        data-aos-once="true"
-      >
-        <div class="subtitle">
-          Na tej podstronie będą pojawiać się linki do szczegółowych opisów moich projektów.
-        </div>
+      <div class="subtitle">
+        Na tej podstronie będą pojawiać się linki do szczegółowych opisów moich projektów.
       </div>
     </v-flex>
-    <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
+    <v-flex
+      xs12
+      sm6
+      offset-sm3
+      md8
+      offset-md2
+      lg6
+      offset-lg3
+      style="text-align: left;margin-top:80px;margin-bottom:80px;"
+    >
       <div
-        class="image-section"
-        data-aos="zoom-in"
-        data-aos-delay="440"
-        data-aos-duration="1200"
-        data-aos-once="true"
+        class=""
+        v-for="link in links"
+        :key="link.id"
       >
-        <div class="subtitle">
-          <nuxt-link to="/projects/yourcity" class="link">Yourcity</nuxt-link>
-        </div>
+        <nuxt-link :to="link.project_link" class="link">
+          {{ link.project_name }}
+        </nuxt-link>
       </div>
     </v-flex>
   </v-layout>
@@ -44,6 +35,28 @@
 
 <script>
 export default {
+  data() {
+    return {
+      links: [
+        {
+          'project_link': '/projects/yourcity',
+          'project_name': 'Platforma Yourcity'
+        },
+        {
+          'project_link': '',
+          'project_name': 'Portal społecznościowy'
+        },
+        {
+          'project_link': '',
+          'project_name': 'Portal do wynajmu mieszkań/pokoi'
+        },
+        {
+          'project_link': '',
+          'project_name': 'Strona firmowa z informacjami o prowadzonej działalności'
+        }
+      ]
+    }
+  },
   head() {
     return {
       title: 'Jakub Gania - Projects',
@@ -66,7 +79,7 @@ export default {
 <style lang="scss" scoped>
 .projects-layout
 {
-  min-height: calc(100vh - 164px);
+  // min-height: calc(100vh - 164px);
 }
 .title-text
 {
@@ -83,5 +96,12 @@ export default {
 .link
 {
   text-decoration: none;
+  margin-top: 20px;
+  font-size: 20px;
+
+  &:hover
+  {
+    color: #0094ff;
+  }
 }
 </style>

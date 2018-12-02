@@ -41,6 +41,11 @@
             Zdjęcia
           </div>
         </v-btn>
+        <v-btn href="https://github.com/jakubgania" flat class="link-button-section">
+          <div class="link-text">
+            Github
+          </div>
+        </v-btn>
       </v-toolbar-items>
     </v-toolbar>
   </div>
@@ -78,7 +83,7 @@ export default {
 .link-text
 {
   font-size: 12px;
-  // font-weight: 700;
+  font-weight: 700;
   letter-spacing: 2px;
   color: #000000;
 }

@@ -107,7 +107,7 @@
 </template>
 
 <script>
-import linksData from '../json/links-data.json';
+import linksData from '../links-data.json';
 
 export default {
   data() {

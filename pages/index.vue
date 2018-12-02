@@ -2,7 +2,7 @@
   <div class="flex-center position-ref full-height" style="background-color:#000000;">
     <div class="content">
       <div class="main-title" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-        Software Developer
+        Web Developer
       </div>
 
       <div class="my-name" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1200" data-aos-once="true">
@@ -46,16 +46,16 @@
 export default {
   head() {
     return {
-      title : 'Jakub Gania - Software Developer',
+      title : 'Jakub Gania - Web Developer',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Jakub Gania - Software Developer'
+          content: 'Jakub Gania - Web Developer. Vue.js, Vuex, Vuetify, NUXT, HTML, CSS, Node.js, PHP, Laravel, Nginx, Docker.'
         },
         {
           name: 'keywords',
-          content: 'software, developer, it, programmer, coder, web, website, frontend, backend, full stack'
+          content: 'software, developer, it, programmer, coder, www, web, website, frontend, backend, full stack, software engineer'
         },
       ]
     }

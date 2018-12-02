@@ -13,7 +13,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { name: 'theme-color', content: "#000000" },
-      { name: 'google-site-verification', content: 'kmb1ayhGB4R-dOAzlxeLZarrP96-nNZ_KE1tpGInl8k' }
+      { name: 'google-site-verification', content: 'pCgwKh6Bl0udfAQC8PP37yLs6Rs26hwU19gmuDgpnZs' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
@@ -49,6 +49,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios'
   ],
 
   /*
