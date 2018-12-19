@@ -6,15 +6,15 @@
       </div>
     </v-flex>
 
-    <!-- <v-flex xs12 sm12 md12 lg8 offset-lg2 style="text-align:center;">
+    <v-flex xs12 sm12 md12 lg8 offset-lg2 style="text-align:center;">
       <v-chip class="email-tag">
         <v-icon style="margin-right:14px;">alternate_email</v-icon>
         <a href="mailto:contact@jakubgania.io" class="email-link">contact@jakubgania.io</a>
       </v-chip>
-    </v-flex> -->
+    </v-flex>
 
-    <v-flex lg12 class="contact-form">
-      <v-form method="post" ref="form" @submit.prevent="submit">
+    <!-- <v-flex lg12 class="contact-form">
+      <v-form action="" method="POST" ref="form" @submit.prevent="submit">
         <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 style="margin-bottom:24px;">
           <v-text-field
             ref="title"
@@ -77,12 +77,12 @@
           </div>
         </v-flex>
         <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 style="margin-bottom:24px;">
-          <v-btn type="submit" depressed large block style="letter-spacing:2px;font-size:12px;">
+          <v-btn type="submit" name="submit" value="SUBMIT" depressed large block style="letter-spacing:2px;font-size:12px;">
             Wyślij
           </v-btn>
         </v-flex>
       </v-form>
-    </v-flex>
+    </v-flex> -->
 
   </v-layout>
 </template>
@@ -97,7 +97,7 @@ export default {
       email: 'example@email.ko',
       message: 'example message message',
       showPassword: false,
-      terms: null,
+      terms: true,
       recaptcha: null,
       parameters: null,
       formHasErrors: false,
@@ -149,9 +149,9 @@ export default {
       //   this.$refs[f].validate(true);
       // });
 
-      if (grecaptcha.getResponse().length == 0) {
-        this.formHasErrors = true;
-      }
+      // if (grecaptcha.getResponse().length == 0) {
+      //   this.formHasErrors = true;
+      // }
 
       // if (this.formHasErrors) {
       //   // alert('false');
@@ -176,34 +176,49 @@ export default {
       }
     },
     sendForm(parameters) {
-      const queryString = `title=${parameters.title}&email=${parameters.email}&message=${parameters.message}&terms=${parameters.terms}`;
+      // const queryString = `title=${parameters.title}&email=${parameters.email}&message=${parameters.message}&terms=${parameters.terms}`;
+      //
+      // const xd = {
+      //   title: 'test',
+      // };
+      //
+      // axios.post('https://jakubgania.io/api/contact-form', {
+      //   firstName: 'Fred',
+      //   lastName: 'Flintstone'
+      // })
+      // .then(function (response) {
+      //   console.log(response);
+      // })
+      // .catch(function (error) {
+      //   console.log(error);
+      // });
 
-      axios.post(`https://jakubgania.io/api/contact-form.php?${queryString}`)
-      .then(response => {
-        // this.rules.terms[() => 'This field is required terms'];
-        switch (response.data.status) {
-          case 'INVALID_TITLE_MESSAGE':
-            this.errorMessageTtile = 'invalid title';
-            break;
-          case 'INVALID_EMAIL':
-            break;
-          case 'INVALID_MESSAGE':
-            break;
-          case 'INVALID_TERMS':
-            break;
-          case 'INVALID_MESSAGE':
-            break;
-          case 'CAPTCHA_ERROR':
-            break;
-          case 'SUCCESS':
-            break;
-          case 'ERROR_SEND':
-            break;
-          default:
-        }
-      })
-      .catch(e => {
-      })
+      // axios.post(`https://jakubgania.io/api/contact-form.php?${queryString}`)
+      // .then(response => {
+      //   // this.rules.terms[() => 'This field is required terms'];
+      //   switch (response.data.status) {
+      //     case 'INVALID_TITLE_MESSAGE':
+      //       this.errorMessageTtile = 'invalid title';
+      //       break;
+      //     case 'INVALID_EMAIL':
+      //       break;
+      //     case 'INVALID_MESSAGE':
+      //       break;
+      //     case 'INVALID_TERMS':
+      //       break;
+      //     case 'INVALID_MESSAGE':
+      //       break;
+      //     case 'CAPTCHA_ERROR':
+      //       break;
+      //     case 'SUCCESS':
+      //       break;
+      //     case 'ERROR_SEND':
+      //       break;
+      //     default:
+      //   }
+      // })
+      // .catch(e => {
+      // })
     },
   },
   head() {
