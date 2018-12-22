@@ -8,12 +8,12 @@
           </div>
         </v-flex>
         <v-flex xs6 sm4 order-sm2 order-xs1 lg2 order-lg2 class="text">
-          <a href="https://github.com/jakubgania" target="_blank" class="link">
+          <a href="https://github.com/jakubgania" target="_blank" rel="noreferrer" class="link">
             Github
           </a>
         </v-flex>
         <v-flex xs6 sm4 order-sm3 order-xs2 lg2 order-lg3 class="text">
-          <a href="https://www.linkedin.com/in/jakubgania" target="_blank" class="link">
+          <a href="https://www.linkedin.com/in/jakubgania" target="_blank" rel="noreferrer" class="link">
             LinkedIn
           </a>
         </v-flex>
