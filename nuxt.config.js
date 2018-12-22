@@ -1,11 +1,29 @@
 const pkg = require('./package')
 
 module.exports = {
+  cache: true,
   mode: 'universal',
 
-  /*
-  ** Headers of the page
-  */
+  manifest: {
+    lang: 'pl',
+    name: 'Jakub Gania - Full Stack Web Developer',
+    description: 'Jakub Gania - Full Stack Web Developer. Vue.js, Vuex, Vuetify, NUXT, HTML, CSS, Node.js, PHP, Laravel, Nginx, Docker.',
+    icons: [
+      {
+        src: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png"
+      },
+      {
+        src: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png"
+      }
+    ],
+    theme_color: "#000000",
+    background_color: "#000000",
+  },
+
   head: {
     title: pkg.name,
     meta: [
@@ -16,50 +34,31 @@ module.exports = {
       { name: 'google-site-verification', content: 'pCgwKh6Bl0udfAQC8PP37yLs6Rs26hwU19gmuDgpnZs' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-      { rel: 'shortcut icon', type: 'image/png', href: '/favicon.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700' }
+      { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32'},
+      { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', sizes: '16x16'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons' },
     ]
   },
 
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#304FFE' },
 
-  /*
-  ** Global CSS
-  */
   css: [
     '~/assets/style/app.styl',
     'aos/dist/aos.css'
   ],
 
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [
     '@/plugins/vuetify',
     { src:"~/plugins/aos", ssr: false },
     { src: '~plugins/ga.js', ssr: false },
   ],
 
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/axios'
   ],
 
-  /*
-  ** Build configuration
-  */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
     extend(config, ctx) {
 
     }

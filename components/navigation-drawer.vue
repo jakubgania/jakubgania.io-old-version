@@ -5,18 +5,18 @@
     app
     right
     temporary
-    class=""
   >
     <v-list class="list-section">
       <div class="logo-section">
-        <v-icon
-          class="close-menu-icon"
-          @click="$emit('switchNavigationDrawer')"
-        >
-          close
-        </v-icon>
 
-        <!-- logo component -->
+        <v-btn flat icon>
+          <v-icon
+            class="close-menu-icon"
+            @click="$emit('switchNavigationDrawer')"
+          >
+            close
+          </v-icon>
+        </v-btn>
 
       </div>
       <v-divider/>

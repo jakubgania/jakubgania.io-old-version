@@ -128,6 +128,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/photos/lg.scss';
-@import '../assets/scss/photos/xs.scss';
+  @import '../assets/scss/photos/lg.scss';
+  @import '../assets/scss/photos/xs.scss';
 </style>

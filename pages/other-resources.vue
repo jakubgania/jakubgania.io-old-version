@@ -135,8 +135,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/other-resources/lg.scss';
-// @import '../assets/scss/other-resources/md.scss';
-// @import '../assets/scss/other-resources/sm.scss';
-@import '../assets/scss/other-resources/xs.scss';
+  @import '../assets/scss/other-resources/lg.scss';
+  // @import '../assets/scss/other-resources/md.scss';
+  // @import '../assets/scss/other-resources/sm.scss';
+  @import '../assets/scss/other-resources/xs.scss';
 </style>

@@ -1,14 +1,14 @@
 <template>
-  <div v-if="displayToolbar()" class="">
+  <div v-if="displayToolbar()">
     <v-toolbar color="white" style="box-shadow: 0px 1px #f2f2f2 !important;">
       <v-toolbar-title>
-        <div class="" style="color:#000000;font-size:24px;">
+        <div style="color:#000000;font-size:24px;">
           <nuxt-link to="/" style="text-decoration:none;">
             Jakub Gania
           </nuxt-link>
         </div>
       </v-toolbar-title>
-      <v-spacer></v-spacer>
+      <v-spacer/>
       <v-toolbar-side-icon @click.native="$emit('switchNavigationDrawer')" class="hidden-xl-only hidden-lg-only hidden-md-only"/>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn to="/" flat class="link-button-section">
@@ -53,10 +53,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-    }
-  },
   methods: {
     displayToolbar() {
       return this.$route.name !== 'index';

@@ -260,7 +260,6 @@ export default {
 .email-tag
 {
   padding: 6px;
-  // margin-top: 60px;
   margin-bottom: 40px;
 }
 .email-link
