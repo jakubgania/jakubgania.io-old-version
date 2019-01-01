@@ -20,9 +20,7 @@
 
       </div>
       <v-divider/>
-      <template
-        v-for="menuItem in menuItems"
-      >
+      <template v-for="menuItem in menuItems">
         <v-list-tile
           :key="menuItem.id"
           :to="menuItem.path"
@@ -45,7 +43,9 @@
         </v-list-tile-action>
 
         <v-list-tile-content class="selected-text">
-          <v-list-tile-title class="list-menu-text">Github</v-list-tile-title>
+          <v-list-tile-title class="list-menu-text">
+            Github
+          </v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
@@ -138,7 +138,6 @@ export default {
 {
   letter-spacing: 2px;
   font-size: 12px;
-  font-weight: 700;
   color: #585858;
 }
 </style>
