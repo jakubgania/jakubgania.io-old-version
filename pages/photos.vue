@@ -1,41 +1,16 @@
 <template>
   <v-layout row wrap class="projects-layout">
-    <v-flex
-      xs12
-      sm6
-      offset-sm3
-      md8
-      offset-md2
-      lg8
-      offset-lg2
-    >
+    <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
       <div class="title-page">
         {{ 'Zdjęcia - ' + photoDetails.length }}
       </div>
     </v-flex>
-    <v-flex
-      xs12
-      sm6
-      offset-sm3
-      md8
-      offset-md2
-      lg8
-      offset-lg2
-    >
+    <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
       <div class="subtitle">
         Na tej stronie będą pojawiać się wykonane przeze mnie zdjęcia.
       </div>
     </v-flex>
-    <v-flex
-      xs12
-      sm10
-      offset-sm1
-      md10
-      offset-md1
-      lg10
-      offset-lg1
-      class="images-section"
-    >
+    <v-flex xs12 sm10 offset-sm1 md10 offset-md1 lg10 offset-lg1 class="images-section">
       <v-container fluid grid-list-xs>
         <v-layout row wrap>
           <v-flex
@@ -58,7 +33,7 @@
                 justify-center
                 ma-0
               >
-                <v-progress-circular indeterminate color="blue"></v-progress-circular>
+                <v-progress-circular indeterminate color="blue"/>
               </v-layout>
             </v-img>
           </v-flex>
@@ -81,7 +56,6 @@
         </v-toolbar>
         <img :src="baseURL + pathFullSize + src" class="full-size-photo">
       </v-card>
-
     </v-dialog>
 
   </v-layout>
