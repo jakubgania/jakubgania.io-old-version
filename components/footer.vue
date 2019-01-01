@@ -4,7 +4,7 @@
       <v-layout row wrap>
         <v-flex xs12 sm4 order-sm1 order-xs3 lg8 order-lg1>
           <div class="link">
-            &copy 2018 Jakub Gania
+            Jakub Gania &copy 2018 - 2019
           </div>
         </v-flex>
         <v-flex xs6 sm4 order-sm2 order-xs1 lg2 order-lg2 class="text">
@@ -33,6 +33,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/footer/lg.scss';
-@import '../assets/scss/footer/xs.scss';
+  @import '../assets/scss/footer/lg.scss';
+  @import '../assets/scss/footer/xs.scss';
 </style>
