@@ -246,42 +246,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contact-layout
-{
-  min-height: calc(100vh - 164px);
-}
-.title-page
-{
-  font-size: 42px;
-  margin-top: 140px;
-  margin-bottom: 80px;
-  text-align: center;
-}
-.email-tag
-{
-  padding: 6px;
-  margin-bottom: 40px;
-}
-.email-link
-{
-  text-decoration: none;
-  color: #000000;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-.contact-form
-{
-  margin-bottom:60px;
-}
-.g-recaptcha {
-  display: inline-block;
-}
-@media only screen and (max-width: 600px)
-{
-  .contact-form
-  {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
+  @import '../assets/scss/contact/contact.scss';
 </style>
