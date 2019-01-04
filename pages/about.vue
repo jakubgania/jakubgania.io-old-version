@@ -1,5 +1,5 @@
 <template>
-  <v-layout row wrap class="template-layout" :style="'background-image: url(' + backgroundImage + '); background-position: center; background-size: cover;'">
+  <v-layout row wrap class="container-about">
     <v-flex xs12 sm10 offset-sm1 md10 offset-md1 lg8 offset-lg2>
       <v-layout row wrap class="information-container">
         <v-flex lg12>
@@ -10,7 +10,7 @@
                   <v-flex xs12 lg4>
                     <div class="image-section">
                       <v-avatar :size="photoSize">
-                        <img :src="profileImage" alt="" style="">
+                        <img :src="profileImage" alt="Jakub Gania - profile photo">
                       </v-avatar>
                     </div>
                   </v-flex>
@@ -42,13 +42,11 @@
 
 <script>
 import profileImage from '../assets/images/profile_img.jpg';
-import backgroundImage from '../assets/images/background.jpg';
 
 export default {
   data() {
     return {
       profileImage,
-      backgroundImage,
       descriptions : {
         'name' : 'Jakub Gania',
         'description1' : 'Nazywam się Jakub Gania. Mieszkam we Wrocławiu. W 2018 roku uzyskałem tytuł inżyniera informatki z specjalizacją inżyniera systemów informatycznych. Specjalizuję sie w technologiach webowych. Cały czas się uczę i poszerzam swoją wiedzę w różnych obszarach powiązanych z programowaniem. Moje projekty udostępniam na platformie GitHub. Rozwijam się w kierunku Full Stack Web Developer.',
