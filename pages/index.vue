@@ -1,11 +1,29 @@
 <template>
   <div class="flex-center position-ref full-height container-index">
-    <div class="content" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
-      <div class="main-title" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
+    <div
+      class="content"
+      data-aos="zoom-in"
+      data-aos-delay="440"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <div
+        class="main-title"
+        data-aos="zoom-in"
+        data-aos-delay="440"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         Full Stack Web Developer
       </div>
 
-      <div class="my-name" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1200" data-aos-once="true">
+      <div
+        class="my-name"
+        data-aos="zoom-in"
+        data-aos-delay="440"
+        data-aos-duration="1200"
+        data-aos-once="true"
+      >
         Jakub Gania
       </div>
 
@@ -32,12 +50,12 @@
             </nuxt-link>
           </v-flex>
           <v-flex xs6 sm2 md2 lg2 style="padding-bottom:20px;">
-            <a href="https://github.com/jakubgania" target="_blank" rel="noreferrer" class="link github">
+            <a :href="links.github" target="_blank" rel="noreferrer" class="link github">
               GitHub
             </a>
           </v-flex>
           <v-flex xs6 sm2 md2 lg2 style="padding-bottom:20px;">
-            <a href="https://www.linkedin.com/in/jakubgania" target="_blank" rel="noreferrer" class="link linkedin">
+            <a :href="links.linkedin" target="_blank" rel="noreferrer" class="link linkedin">
               LinkedIn
             </a>
           </v-flex>
@@ -46,9 +64,7 @@
 
     </div>
 
-    <div class="copyright">
-      Jakub Gania &copy 2018 - 2019
-    </div>
+    <div class="copyright" v-html="copyrightText"/>
 
   </div>
 </template>
@@ -57,6 +73,11 @@
 export default {
   data() {
     return {
+      links: {
+        github: 'https://github.com/jakubgania',
+        linkedin: 'https://www.linkedin.com/in/jakubgania'
+      },
+      copyrightText: 'Jakub Gania &copy 2018 - 2019'
     }
   },
   head() {
