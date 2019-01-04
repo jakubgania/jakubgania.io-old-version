@@ -1,9 +1,9 @@
 <template>
   <div v-if="displayToolbar()">
-    <v-toolbar color="white" style="box-shadow: 0px 1px #f2f2f2 !important;">
+    <v-toolbar color="white" absolute class="toolbar-header">
       <v-toolbar-title>
-        <div style="color:#000000;font-size:24px;">
-          <nuxt-link to="/" style="text-decoration:none;">
+        <div style="font-size:22px;">
+          <nuxt-link to="/" style="color:#000000;text-decoration:none;">
             Jakub Gania
           </nuxt-link>
         </div>
@@ -62,6 +62,11 @@ export default {
 </script>
 
 <style lang="scss">
+.toolbar-header
+{
+  // background-color: rgba(0, 0, 0, 0.8) !important;
+  box-shadow: none!important;
+}
 .link-button-section
 {
   border-radius: 0px;
@@ -79,8 +84,7 @@ export default {
 .link-text
 {
   font-size: 12px;
-  font-weight: 700;
   letter-spacing: 2px;
-  color: #000000;
+  color: #6e6e6e;
 }
 </style>

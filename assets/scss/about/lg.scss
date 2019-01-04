@@ -1,35 +1,37 @@
 .template-layout
 {
-  min-height: calc(100vh - 164px);
+  min-height: 100vh;
+  // margin-top: -64px;
 }
 .image-section
 {
-  background-color: #ffffff;
+  // background-color: rgba(#000000, 0.81);
   text-align: center;
   padding-bottom: 38px;
 }
 .information-container
 {
-  margin-top: 200px;
+  margin-top: 260px;
   min-height: 480px;
 }
 .information-section
 {
-  background-color: #ffffff;
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: rgba(#000000, 0.8);
+  // border-radius: 50px;
+  color: #ffffff;
+  padding: 24px 24px 24px 24px;
 }
 .description-name-section
 {
-  height: 200px;
-  line-height: 200px;
+  height: 180px;
+  line-height: 140px;
   padding-left: 40px;
 }
 .description-name
 {
-  font-size: 64px;
+  font-size: 54px;
   letter-spacing: 2px;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
 }
 .description-name-2
 {

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex-center position-ref full-height" style="background-color:#000000;">
-    <div class="content">
+  <div class="flex-center position-ref full-height container-index">
+    <div class="content" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
       <div class="main-title" data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1000" data-aos-once="true">
         Full Stack Web Developer
       </div>
@@ -10,7 +10,7 @@
       </div>
 
       <div data-aos="zoom-in" data-aos-delay="440" data-aos-duration="1400" data-aos-once="true">
-        <v-layout row wrap class="links">
+        <v-layout row wrap class="links-section">
           <v-flex xs6 sm2 md2 lg2 style="padding-bottom:20px;">
             <nuxt-link to="/about" class="link about">
               O mnie
@@ -47,15 +47,18 @@
     </div>
 
     <div class="copyright">
-      &copy 2018 - 2019 Jakub Gania
+      Jakub Gania &copy 2018 - 2019
     </div>
 
   </div>
 </template>
 
 <script>
-
 export default {
+  data() {
+    return {
+    }
+  },
   head() {
     return {
       title : 'Jakub Gania - Web Developer',

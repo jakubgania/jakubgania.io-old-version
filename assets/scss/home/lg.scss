@@ -1,4 +1,4 @@
-$text-color: #dadada;
+$text-color: #000000;
 
 body, html
 {
@@ -9,49 +9,54 @@ body, html
 {
   height: 100vh;
 }
-
 .flex-center
 {
   align-items: center;
   display: flex;
   justify-content: center;
 }
-
 .position-ref
 {
   position: relative;
 }
-
-.top-right
+.container-index
 {
-  position: absolute;
-  right: 10px;
-  top: 18px;
+  background-image: url(../assets/images/background-index.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-
 .content
 {
+  position: relative;
   text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 40px #bdbdbd;
 }
-
 .main-title
 {
-  font-size: 64px;
-  color: $text-color;
+  font-size: 42px;
+  color: #ffffff;
+  background-color: #000000;
   font-weight: 300;
   letter-spacing: .4rem;
   margin-bottom: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
-
 .my-name
 {
   font-size: 32px;
   color: $text-color;
-  margin-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-
+.links-section
+{
+  padding-bottom: 20px;
+}
 .link
 {
   color: $text-color;
@@ -95,11 +100,13 @@ body, html
   line-height: 40px;
   position: fixed;
   top: calc(100vh - 40px);
-  color: $text-color;
-  background-color: #000000;
+  color: #000000;
+  background-color: rgba(#ffffff, 0.4);
   z-index: 10;
   text-align: center;
   letter-spacing: .2rem;
+  font-size: 12px;
+  font-weight: 700;
 }
 @media only screen and (max-width: 959px)
 {

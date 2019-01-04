@@ -1,5 +1,5 @@
 <template>
-  <v-layout row wrap class="template-layout">
+  <v-layout row wrap class="template-layout" :style="'background-image: url(' + backgroundImage + '); background-position: center; background-size: cover;'">
     <v-flex xs12 sm10 offset-sm1 md10 offset-md1 lg8 offset-lg2>
       <v-layout row wrap class="information-container">
         <v-flex lg12>
@@ -9,7 +9,7 @@
                 <v-layout row wrap>
                   <v-flex xs12 lg4>
                     <div class="image-section">
-                      <v-avatar :size="photoSize" color="grey lighten-4">
+                      <v-avatar :size="photoSize">
                         <img :src="profileImage" alt="" style="">
                       </v-avatar>
                     </div>
@@ -21,12 +21,12 @@
                   </v-flex>
                 </v-layout>
               </v-flex>
-              <v-flex xs12 sm8 offset-sm2 md8 offset-md2 lg8 offset-lg2 style="margin-bottom:20px;">
+              <v-flex xs12 sm8 offset-sm2 md8 offset-md2 lg8 offset-lg2 style="border-top:1px solid #888888;padding-top:20px;">
                 <div class="description">
                   {{ descriptions.description1 }}
                 </div>
               </v-flex>
-              <v-flex xs12 sm8 offset-sm2 md8 offset-md2 lg8 offset-lg2 style="margin-top:20px;margin-bottom:20px;">
+              <v-flex xs12 sm8 offset-sm2 md8 offset-md2 lg8 offset-lg2 style="margin-top:20px;margin-bottom:20px;border-top:1px solid #888888;padding-top:20px;">
                 <div class="description">
                   {{ descriptions.description2 }}
                 </div>
@@ -42,11 +42,13 @@
 
 <script>
 import profileImage from '../assets/images/profile_img.jpg';
+import backgroundImage from '../assets/images/background.jpg';
 
 export default {
   data() {
     return {
       profileImage,
+      backgroundImage,
       descriptions : {
         'name' : 'Jakub Gania',
         'description1' : 'Nazywam się Jakub Gania. Mieszkam we Wrocławiu. W 2018 roku uzyskałem tytuł inżyniera informatki z specjalizacją inżyniera systemów informatycznych. Specjalizuję sie w technologiach webowych. Cały czas się uczę i poszerzam swoją wiedzę w różnych obszarach powiązanych z programowaniem. Moje projekty udostępniam na platformie GitHub. Rozwijam się w kierunku Full Stack Web Developer.',
@@ -57,12 +59,12 @@ export default {
   computed: {
     photoSize() {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '180';
-        case 'sm': return '180';
-        case 'md': return '180';
-        case 'lg': return '200';
-        case 'xl': return '200';
-        default: return '200';
+        case 'xs': return '140';
+        case 'sm': return '140';
+        case 'md': return '140';
+        case 'lg': return '140';
+        case 'xl': return '160';
+        default: return '160';
       }
     }
   },
