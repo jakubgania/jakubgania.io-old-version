@@ -47,7 +47,7 @@
     </div>
 
     <div class="copyright">
-      Copyright &copy 2018 Jakub Gania
+      &copy 2018 - 2019 Jakub Gania
     </div>
 
   </div>
