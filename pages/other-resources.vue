@@ -1,27 +1,11 @@
 <template>
   <v-layout row wrap class="projects-layout">
-    <v-flex
-      xs12
-      sm8
-      offset-sm2
-      md8
-      offset-md2
-      lg8
-      offset-lg2
-    >
+    <v-flex xs12 sm8 offset-sm2 md8 offset-md2 lg8 offset-lg2>
       <div class="page-title">
         Inne
       </div>
     </v-flex>
-    <v-flex
-      xs12
-      sm8
-      offset-sm2
-      md8
-      offset-md2
-      lg8
-      offset-lg2
-    >
+    <v-flex xs12 sm8 offset-sm2 md8 offset-md2 lg8 offset-lg2>
       <div class="page-description">
         Ciekawe strony, portale, blogi, oprogramowanie oraz inne zasoby.
       </div>
