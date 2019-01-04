@@ -104,40 +104,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.list-section
-{
-  padding: 0;
-}
-.logo-section
-{
-  height: 56px;
-  line-height: 56px;
-}
-.close-menu-icon
-{
-  float: right;
-  margin-right: 20px;
-  line-height: 56px;
-  font-size: 30px;
-  color: #000000;
-  cursor: default;
-}
-.selected-icon
-{
-  color: #252bfc !important;
-}
-.selected-text
-{
-  color: #000000 !important;
-}
-.list-menu-icon
-{
-  margin-left: 3px;
-}
-.list-menu-text
-{
-  letter-spacing: 2px;
-  font-size: 12px;
-  color: #585858;
-}
+  @import '../assets/scss/navigation-drawer.scss';
 </style>
