@@ -2,14 +2,15 @@
   <div v-if="displayToolbar()">
     <v-toolbar color="white" absolute class="toolbar-header">
       <v-toolbar-title>
-        <div style="font-size:22px;">
-          <nuxt-link to="/" style="color:#000000;text-decoration:none;">
-            Jakub Gania
-          </nuxt-link>
-        </div>
+        <nuxt-link to="/" class="logo-link">
+          Jakub Gania
+        </nuxt-link>
       </v-toolbar-title>
       <v-spacer/>
-      <v-toolbar-side-icon @click.native="$emit('switchNavigationDrawer')" class="hidden-xl-only hidden-lg-only hidden-md-only"/>
+      <v-toolbar-side-icon
+        @click.native="$emit('switchNavigationDrawer')"
+        class="hidden-xl-only hidden-lg-only hidden-md-only"
+      />
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn to="/" flat class="link-button-section">
           <div class="link-text">
@@ -62,29 +63,5 @@ export default {
 </script>
 
 <style lang="scss">
-.toolbar-header
-{
-  // background-color: rgba(0, 0, 0, 0.8) !important;
-  box-shadow: none!important;
-}
-.link-button-section
-{
-  border-radius: 0px;
-
-  &:hover
-  {
-    background-color: #000000;
-
-    .link-text
-    {
-      color: #ffffff;
-    }
-  }
-}
-.link-text
-{
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #6e6e6e;
-}
+  @import '../assets/scss/toolbar-header.scss';
 </style>
