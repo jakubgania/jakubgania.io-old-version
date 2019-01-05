@@ -41,17 +41,25 @@
       </v-container>
     </v-flex>
 
-    <v-flex xs12 sm6 offset-sm3 md4 offset-md4 lg4 offset-lg4
+    <v-flex
       v-if="showPagingButton"
+      xs12
+      sm6
+      offset-sm3
+      md4
+      offset-md4
+      lg4
+      offset-lg4
     >
       <v-btn
         block
         depressed
         color="blue-grey lighten-3"
         @click="getPhotos(page)"
-        style="margin-bottom:40px;font-size:12px;font-weight:700;letter-spacing:2px;"
+        class="paging-button"
       >
-        Więcej <v-icon style="margin-left:6px;font-size:20px;">cached</v-icon>
+        Więcej
+        <v-icon style="margin-left:6px;font-size:20px;">cached</v-icon>
       </v-btn>
     </v-flex>
 
