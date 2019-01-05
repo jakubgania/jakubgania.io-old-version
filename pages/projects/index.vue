@@ -77,31 +77,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.projects-layout
-{
-  // min-height: calc(100vh - 164px);
-}
-.title-text
-{
-  font-size: 42px;
-  margin-top: 140px;
-  text-align: center;
-}
-.subtitle
-{
-  font-size: 24px;
-  margin-top: 40px;
-  text-align: center;
-}
-.link
-{
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 20px;
-
-  &:hover
-  {
-    color: #0094ff;
-  }
-}
+  @import '../assets/scss/projects/projects.scss';
 </style>
