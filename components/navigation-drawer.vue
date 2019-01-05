@@ -9,11 +9,8 @@
     <v-list class="list-section">
       <div class="logo-section">
 
-        <v-btn flat icon>
-          <v-icon
-            class="close-menu-icon"
-            @click="$emit('switchNavigationDrawer')"
-          >
+        <v-btn flat icon class="close-menu-icon">
+          <v-icon @click="$emit('switchNavigationDrawer')">
             close
           </v-icon>
         </v-btn>
@@ -21,10 +18,7 @@
       </div>
       <v-divider/>
       <template v-for="menuItem in menuItems">
-        <v-list-tile
-          :key="menuItem.id"
-          :to="menuItem.path"
-        >
+        <v-list-tile :key="menuItem.id" :to="menuItem.path">
           <v-list-tile-action class="selected-icon">
             <v-icon class="list-menu-icon">keyboard_arrow_right</v-icon>
           </v-list-tile-action>
