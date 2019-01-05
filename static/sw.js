@@ -20,6 +20,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "3b15b37ba0a69ff9993b5c78eeb66c86"
   },
   {
+    "url": "/_nuxt/4c389fd67922906a5370.js",
+    "revision": "49a18cb6be43a50a6559a81fe74f11a2"
+  },
+  {
     "url": "/_nuxt/55cac26c9afff3a148d5.js",
     "revision": "149145811d66304c466b097d65bd10d1"
   },
@@ -36,16 +40,12 @@ workbox.precaching.precacheAndRoute([
     "revision": "4eb75e79b1bca5c9652e9eb60bb8a59a"
   },
   {
-    "url": "/_nuxt/a547d0549f1b2032d6bf.js",
-    "revision": "ed2c3da7271695306d66d43e20ac9189"
+    "url": "/_nuxt/abe1092ba62cf4cdb2ce.js",
+    "revision": "fa5506c908dc3b8c24d1f88df3cfcb98"
   },
   {
     "url": "/_nuxt/ce0b1216a9872e369bc6.js",
     "revision": "c51eb764a071f1d66a072a8b2b6c2b26"
-  },
-  {
-    "url": "/_nuxt/f5138bee994b3e569932.js",
-    "revision": "c5d0d28a653bf0ada09e30f02fb65c9e"
   }
 ], {
   "cacheId": "business-website",

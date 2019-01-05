@@ -2,7 +2,7 @@
   <v-layout row wrap class="projects-layout">
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
       <div class="title-page">
-        {{ 'Zdjęcia - ' + photoDetails.length }}
+        {{ 'Zdjęcia' }}
       </div>
     </v-flex>
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
@@ -18,11 +18,11 @@
             sm6
             md4
             lg3
-            v-for="(thumbnail, index) in photoDetails"
+            v-for="(thumbnail, index) in details"
             :key="thumbnail.id"
           >
             <v-img
-              :src="baseURL + pathSmallSize + photoDetails[index].src"
+              :src="baseURL + pathSmallSize + details[index].src"
               @click="setDetailsPhoto(index)"
               aspect-ratio="1.8"
             >
@@ -39,6 +39,20 @@
           </v-flex>
         </v-layout>
       </v-container>
+    </v-flex>
+
+    <v-flex xs12 sm6 offset-sm3 md4 offset-md4 lg4 offset-lg4
+      v-if="showPagingButton"
+    >
+      <v-btn
+        block
+        depressed
+        color="blue-grey lighten-3"
+        @click="getPhotos(page)"
+        style="margin-bottom:40px;font-size:12px;font-weight:700;letter-spacing:2px;"
+      >
+        Więcej <v-icon style="margin-left:6px;font-size:20px;">cached</v-icon>
+      </v-btn>
     </v-flex>
 
     <v-dialog
@@ -62,25 +76,50 @@
 </template>
 
 <script>
-import imagesPaths from '../images-paths.json';
+import axios from 'axios';
 
 export default {
   data() {
     return {
       fullScreenPhoto: false,
       src: null,
+      page: 1,
       baseURL: 'https://jakubgania.io',
       pathFullSize: '/images/full-size/',
       pathSmallSize: '/images/small-size/',
-      photoDetails: imagesPaths['images-paths'],
+      showPagingButton: true,
+      details: [],
     }
   },
   methods: {
     setDetailsPhoto(index) {
-      let details = this.photoDetails[index];
+      let details = this.details[index];
       this.src = details.src;
       this.fullScreenPhoto = true;
     },
+    getPhotos(pageNumber) {
+      axios.get('https://jakubgania.io/api/photos.php', {
+        params: {
+          page: pageNumber
+        }
+      })
+      .then(response => {
+        if (response.data.data.length !== 0) {
+          this.details = this.details.concat(response.data.data);
+          this.page++;
+
+          if (this.page > response.data.pages) {
+            this.showPagingButton = false;
+          }
+        }
+      })
+      .catch(e => {
+        //
+      })
+    },
+  },
+  created() {
+    this.getPhotos(this.page);
   },
   head() {
     return {
