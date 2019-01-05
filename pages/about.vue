@@ -1,6 +1,6 @@
 <template>
-  <v-layout row wrap class="container-about">
-    <v-flex xs12 sm10 offset-sm1 md10 offset-md1 lg8 offset-lg2>
+  <v-layout align-center justify-center row fill-height class="container-about">
+    <v-flex xs12 sm10 md10 lg8>
       <v-layout row wrap class="information-container">
         <v-flex lg12>
           <div class="information-section">
@@ -36,7 +36,6 @@
         </v-flex>
       </v-layout>
     </v-flex>
-
   </v-layout>
 </template>
 
@@ -59,7 +58,7 @@ export default {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs': return '120';
         case 'sm': return '120';
-        case 'md': return '140';
+        case 'md': return '120';
         case 'lg': return '140';
         case 'xl': return '160';
         default: return '160';

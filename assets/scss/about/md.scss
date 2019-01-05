@@ -1,15 +1,28 @@
 @media only screen and (max-width: 1264px)
 {
-  .information-container
+  .container-about
   {
-    margin-top: 100px;
+    min-height: 800px;
   }
   .image-section
   {
+    padding-top: 26px;
     padding-bottom: 0px;
+  }
+  .description
+  {
+    font-size: 18px;
   }
   .description-name-section
   {
+    height: 100px;
+    line-height: 100px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .description-name
+  {
+    font-size: 36px;
     text-align: center;
   }
 }

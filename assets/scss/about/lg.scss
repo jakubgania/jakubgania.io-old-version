@@ -1,6 +1,8 @@
 .container-about
 {
-  min-height: 100vh;
+  margin-top: 64px;
+  height: 100vh;
+  min-height: 580px;
   background-image: url(../assets/images/background.jpg);
   background-position: center;
   background-size: cover;
@@ -12,14 +14,13 @@
 }
 .information-container
 {
-  margin-top: 260px;
   min-height: 480px;
 }
 .information-section
 {
   background-color: rgba(#000000, 0.8);
   color: #ffffff;
-  padding: 24px 24px 24px 24px;
+  padding: 26px 26px 26px 26px;
 }
 .description-name-section
 {
