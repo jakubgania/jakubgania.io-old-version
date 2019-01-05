@@ -57,8 +57,8 @@ export default {
   computed: {
     photoSize() {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '140';
-        case 'sm': return '140';
+        case 'xs': return '120';
+        case 'sm': return '120';
         case 'md': return '140';
         case 'lg': return '140';
         case 'xl': return '160';

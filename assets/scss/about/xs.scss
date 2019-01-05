@@ -1,22 +1,34 @@
-@media only screen and (max-width: 600px) {
-  .template-layout {
-    padding-bottom: 80px;
-  }
-  .information-container {
+@media only screen and (max-width: 600px)
+{
+  .information-container
+  {
     margin-top: 40px;
+  }
+  .information-section
+  {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 40px;
   }
   .image-section
   {
     padding-bottom: 0px;
   }
-  .description-name-section {
-    height: 140px;
-    line-height: 140px;
+  .description
+  {
+    font-size: 16px;
+  }
+  .description-name-section
+  {
+    height: 100px;
+    line-height: 100px;
     padding-left: 0px;
   }
   .description-name
   {
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
   }
 }
