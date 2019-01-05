@@ -2,12 +2,12 @@
   <v-layout row wrap class="projects-layout">
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
       <div class="title-page">
-        {{ 'Zdjęcia' }}
+        {{ pageTitle }}
       </div>
     </v-flex>
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
       <div class="subtitle">
-        Na tej stronie będą pojawiać się wykonane przeze mnie zdjęcia.
+        {{ pageSubtitle }}
       </div>
     </v-flex>
     <v-flex xs12 sm10 offset-sm1 md10 offset-md1 lg10 offset-lg1 class="images-section">
@@ -58,7 +58,7 @@
         @click="getPhotos(page)"
         class="paging-button"
       >
-        Więcej
+        {{ pagingButtonText }}
         <v-icon style="margin-left:6px;font-size:20px;">cached</v-icon>
       </v-btn>
     </v-flex>
@@ -89,6 +89,9 @@ import axios from 'axios';
 export default {
   data() {
     return {
+      pageTitle: 'Zdjęcia',
+      pageSubtitle: 'Na tej stronie będą pojawiać się wykonane przeze mnie zdjęcia.',
+      pagingButtonText: 'Więcej',
       fullScreenPhoto: false,
       src: null,
       page: 1,
