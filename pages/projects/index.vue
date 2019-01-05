@@ -20,11 +20,7 @@
       offset-lg3
       style="text-align: left;margin-top:80px;margin-bottom:80px;"
     >
-      <div
-        class=""
-        v-for="link in links"
-        :key="link.id"
-      >
+      <div v-for="link in links" :key="link.id">
         <nuxt-link :to="link.project_link" class="link">
           {{ link.project_name }}
         </nuxt-link>
