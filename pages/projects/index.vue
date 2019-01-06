@@ -2,12 +2,12 @@
   <v-layout row wrap class="projects-layout">
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
       <div class="title-text">
-        Projekty
+        {{ pageTtile }}
       </div>
     </v-flex>
     <v-flex xs12 sm6 offset-sm3 md8 offset-md2 lg8 offset-lg2>
       <div class="subtitle">
-        Na tej podstronie będą pojawiać się linki do szczegółowych opisów moich projektów.
+        {{ pageSubtitle }}
       </div>
     </v-flex>
     <v-flex
@@ -33,23 +33,25 @@
 export default {
   data() {
     return {
+      pageTtile: 'Projekty',
+      pageSubtitle: 'Strona z linkami do szczegółowych opisów moich projektów.',
       links: [
         {
           'project_link': '/projects/yourcity',
           'project_name': 'Platforma Yourcity'
         },
-        {
-          'project_link': '',
-          'project_name': 'Portal społecznościowy'
-        },
-        {
-          'project_link': '',
-          'project_name': 'Portal do wynajmu mieszkań/pokoi'
-        },
-        {
-          'project_link': '',
-          'project_name': 'Strona firmowa z informacjami o prowadzonej działalności'
-        }
+        // {
+        //   'project_link': '',
+        //   'project_name': 'Portal społecznościowy'
+        // },
+        // {
+        //   'project_link': '',
+        //   'project_name': 'Portal do wynajmu mieszkań/pokoi'
+        // },
+        // {
+        //   'project_link': '',
+        //   'project_name': 'Strona firmowa z informacjami o prowadzonej działalności'
+        // }
       ]
     }
   },
@@ -73,5 +75,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/scss/projects/projects.scss';
+  @import '../../assets/scss/projects/projects.scss';
 </style>
