@@ -54,7 +54,6 @@
       <v-btn
         block
         depressed
-        color="blue-grey lighten-3"
         @click="getPhotos(page)"
         class="paging-button"
       >
