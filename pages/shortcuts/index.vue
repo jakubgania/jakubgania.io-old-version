@@ -23,6 +23,10 @@
           {
             title: 'Windows',
             path: '/shortcuts/windows'
+          },
+          {
+            title: 'PhpStorm',
+            path: '/shortcuts/phpstorm'
           }
         ]
       }
