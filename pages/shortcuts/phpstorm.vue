@@ -77,6 +77,78 @@
               {
                 command: 'Ctrl + Alt + T',
                 description: 'Surround with ... (if..else,try..catch,for,etc.)'
+              },
+              {
+                command: 'Ctrl + /',
+                description: 'Comment/uncomment with line comment'
+              },
+              {
+                command: 'Ctrl + Shift + /',
+                description: 'Comment/uncomment with block comment'
+              },
+              {
+                command: 'Ctrl + W',
+                description: 'Select successively increasing code blocks'
+              },
+              {
+                command: 'Ctrl + Shift + W',
+                description: 'Decrease current selection to previous state'
+              },
+              {
+                command: 'Ctrl + Alt + L',
+                description: 'Reformat code'
+              },
+              {
+                command: 'Ctrl + Alt + I',
+                description: 'Auto-indent line(s)'
+              },
+              {
+                command: 'Ctrl + D',
+                description: 'Duplicate current line or selected block'
+              },
+              {
+                command: 'Ctrl + Y',
+                description: 'Delete line at caret'
+              },
+              {
+                command: 'Ctrl + Shift + J',
+                description: 'Smart line join (HTML and JavaScript only)'
+              },
+              {
+                command: 'Ctrl + Enter',
+                description: 'Smart line split (HTML and JavaScript only)'
+              },
+              {
+                command: 'Shift + Enter',
+                description: 'Start new line'
+              },
+              {
+                command: 'Ctrl + Shift + U',
+                description: 'Toggle case for word at caret or selected block'
+              },
+              {
+                command: 'Ctrl + Shift + ] / [',
+                description: 'Select till code block end/start'
+              },
+              {
+                command: 'Ctrl + Delete',
+                description: 'Delete to word end'
+              },
+              {
+                command: 'Ctrl + Backspace',
+                description: 'Delete to word start'
+              },
+              {
+                command: 'Ctrl + NumPad +/-',
+                description: 'Expand/collapse code block'
+              },
+              {
+                command: 'Ctrl + F4',
+                description: 'Close active editor tab'
+              },
+              {
+                command: 'Ctrl + Shift + V',
+                description: 'Paste from history'
               }
             ]
           },
@@ -84,8 +156,32 @@
             title_section: 'Debugging',
             data: [
               {
-                commnad: 'title',
-                description: 'commands1'
+                command: 'F8',
+                description: 'Step over'
+              },
+              {
+                command: 'F7',
+                description: 'Step into'
+              },
+              {
+                command: 'Shift + F8',
+                description: 'Step out'
+              },
+              {
+                command: 'Alt + F8',
+                description: 'Evaluate expression'
+              },
+              {
+                command: 'F9',
+                description: 'Resume program'
+              },
+              {
+                command: 'Ctrl + F8',
+                description: 'Toggle breakpoint'
+              },
+              {
+                command: 'Ctrl + Shift + F8',
+                description: 'View breakpoints'
               }
             ]
           },
@@ -93,8 +189,20 @@
             title_section: 'Running',
             data: [
               {
-                commnad: 'title',
-                description: 'commands1'
+                command: 'Shift + F10',
+                description: 'Run'
+              },
+              {
+                command: 'Shift + F9',
+                description: 'Debug'
+              },
+              {
+                command: 'Ctrl + Shift + F10',
+                description: 'Run context configuration from editor'
+              },
+              {
+                command: 'Ctrl + Shift + X',
+                description: 'Run command line'
               }
             ]
           },
@@ -102,8 +210,16 @@
             title_section: 'Search/Replace',
             data: [
               {
-                commnad: 'title',
-                description: 'commands1'
+                command: 'Ctrl + F/R',
+                description: 'Find/Replace'
+              },
+              {
+                command: 'F3/Shift + F3',
+                description: 'Find next/previous'
+              },
+              {
+                command: 'Ctrl + Shift + F/R',
+                description: 'Find/Replace in path'
               }
             ]
           },
@@ -111,8 +227,16 @@
             title_section: 'Usage Search',
             data: [
               {
-                commnad: 'title',
-                description: 'commands1'
+                command: 'Alt + F7 / Ctrl + F7',
+                description: 'Find usages in file'
+              },
+              {
+                command: 'Ctrl + Shift + F7',
+                description: 'Highlight usages in file'
+              },
+              {
+                command: 'Ctrl + Alt + F7',
+                description: 'Show usages'
               }
             ]
           },
@@ -120,7 +244,7 @@
             title_section: 'Navigation',
             data: [
               {
-                commnad: 'title',
+                command: 'title',
                 description: 'commands1'
               }
             ]
@@ -129,8 +253,28 @@
             title_section: 'Refactoring',
             data: [
               {
-                commnad: 'title',
-                description: 'commands1'
+                command: 'F5/F6',
+                description: 'Copy/Move'
+              },
+              {
+                command: 'Alt + Delete',
+                description: 'Safe Delete'
+              },
+              {
+                command: 'Shift + F6',
+                description: 'Rename'
+              },
+              {
+                command: 'Ctrl + Alt + N',
+                description: 'Inline Variable'
+              },
+              {
+                command: 'Ctrl + Alt + M/V/F/C',
+                description: 'Extract Method/Variable/Field/Constant'
+              },
+              {
+                command: 'Ctrl + Alt + Shift + T',
+                description: 'Refactor This (shows all available refactoring)'
               }
             ]
           },
@@ -138,8 +282,20 @@
             title_section: 'VCS/Local history',
             data: [
               {
-                commnad: 'title',
-                description: 'commands1'
+                command: 'Alt + BackQuote (`)',
+                description: 'VCS quick popup'
+              },
+              {
+                command: 'Ctrl + K',
+                description: 'Commit project to VCS'
+              },
+              {
+                command: 'Ctrl + T',
+                description: 'Update project from VCS'
+              },
+              {
+                command: 'Alt + Shift + C',
+                description: 'View recent changes'
               }
             ]
           },
@@ -147,8 +303,40 @@
             title_section: 'General',
             data: [
               {
-                commnad: 'title',
-                description: 'commands1'
+                command: 'Double Shift',
+                description: 'Search everywhere'
+              },
+              {
+                command: 'Ctrl + Shift + A',
+                description: 'Find Action'
+              },
+              {
+                command: 'Alt + #[0-9]',
+                description: 'Open corresponding tool window'
+              },
+              {
+                command: 'Ctrl + Alt + F11',
+                description: 'Toggle maximizing editor'
+              },
+              {
+                command: 'Ctrl + Shift + F12',
+                description: 'Toggle maximizing editor'
+              },
+              {
+                command: 'Alt + Shift + F',
+                description: 'Add to Favorites'
+              },
+              {
+                command: 'Alt + Shift + I',
+                description: 'Inspect current file with current profile'
+              },
+              {
+                command: 'Ctrl + Alt + S',
+                description: 'Open Settings dialog'
+              },
+              {
+                command: 'Ctrl + Tab',
+                description: 'Switch between tabs and tool window'
               }
             ]
           },
@@ -156,8 +344,40 @@
             title_section: 'Live Templates / Snippets',
             data: [
               {
-                commnad: 'title',
-                description: 'commands1'
+                command: 'Ctrl + J',
+                description: 'Insert Live Template'
+              },
+              {
+                command: 'eco',
+                description: 'echo statement'
+              },
+              {
+                command: 'fore',
+                description: 'foreach(iterable_expr as $value) {...}'
+              },
+              {
+                command: 'forek',
+                description: 'foreach(iterable_expr as &key => $value) {...}'
+              },
+              {
+                command: 'inc/inco',
+                description: 'include/include_once statement'
+              },
+              {
+                command: 'prif',
+                description: 'private function'
+              },
+              {
+                command: 'prof',
+                description: 'protected function'
+              },
+              {
+                command: 'pubf',
+                description: 'public function'
+              },
+              {
+                command: 'rqr/rqro',
+                description: 'require/require_once statement'
               }
             ]
           },
