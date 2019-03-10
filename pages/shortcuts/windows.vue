@@ -185,6 +185,22 @@
           }
         ]
       }
+    },
+    head() {
+      return {
+        title: 'Jakub Gania - Shortcuts - Windows',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Shortcuts for Windows'
+          },
+          {
+            name: 'keywords',
+            content: 'projects'
+          },
+        ]
+      }
     }
   }
 </script>

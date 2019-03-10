@@ -244,8 +244,80 @@
             title_section: 'Navigation',
             data: [
               {
-                command: 'title',
-                description: 'commands1'
+                command: 'Ctrl + N',
+                description: 'Go to class'
+              },
+              {
+                command: 'Ctrl + Shift + N',
+                description: 'Go to file'
+              },
+              {
+                command: 'Ctrl + Alt + Shift + N',
+                description: 'Go to symbol'
+              },
+              {
+                command: 'Ctrl + G',
+                description: 'Go to line'
+              },
+              {
+                command: 'Alt + Right/Left',
+                description: 'Go to next/previous editor tab'
+              },
+              {
+                command: 'Esc',
+                description: 'Go to editor (from tool window)'
+              },
+              {
+                command: 'Ctrl E',
+                description: 'Recent files popup'
+              },
+              {
+                command: 'Ctrl + Alt + Left/Right',
+                description: 'Navigate back/forward'
+              },
+              {
+                command: 'Ctrl + Shift + Backspace',
+                description: 'Navigate to last edit location'
+              },
+              {
+                command: 'Alt + F1',
+                description: 'Select current file or symbol in any view'
+              },
+              {
+                command: 'Ctrl + B or Ctrl + Click',
+                description: 'Go to declaration'
+              },
+              {
+                command: 'Ctrl + Alt + B',
+                description: 'Go to implementation(s)'
+              },
+              {
+                command: 'Ctrl + Shift + I',
+                description: 'Open quick definition lookup'
+              },
+              {
+                command: 'Ctrl + Shift + B',
+                description: 'Go to type declaration'
+              },
+              {
+                command: 'Ctrl + U',
+                description: 'Go to super-method/super-class'
+              },
+              {
+                command: 'Alt + Up/Down',
+                description: 'Go to previos/next method'
+              },
+              {
+                command: 'Ctrl + ]/[',
+                description: 'Move to code block end/start'
+              },
+              {
+                command: 'F2/Shift + F2',
+                description: 'Next/previos highlighted error'
+              },
+              {
+                command: 'F4/Ctrl + Enter',
+                description: 'Edit source/View source'
               }
             ]
           },
@@ -380,6 +452,22 @@
                 description: 'require/require_once statement'
               }
             ]
+          },
+        ]
+      }
+    },
+    head() {
+      return {
+        title: 'Jakub Gania - Shortcuts - PhpStorm',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Shortcuts for PhpStorm'
+          },
+          {
+            name: 'keywords',
+            content: 'projects'
           },
         ]
       }

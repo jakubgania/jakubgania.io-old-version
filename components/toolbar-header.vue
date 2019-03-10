@@ -32,6 +32,11 @@
             Kontakt
           </div>
         </v-btn>
+        <v-btn to="/shortcuts" flat class="link-button-section">
+          <div class="link-text">
+            Shortcuts
+          </div>
+        </v-btn>
         <v-btn to="/other-resources" flat class="link-button-section">
           <div class="link-text">
             Inne

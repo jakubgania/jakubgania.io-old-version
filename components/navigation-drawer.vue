@@ -74,6 +74,10 @@ export default {
           path: '/contact'
         },
         {
+          title: "Shortcuts",
+          path: '/shortcuts'
+        },
+        {
           title: "Inne",
           path: '/other-resources'
         },
