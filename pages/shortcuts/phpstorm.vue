@@ -6,7 +6,7 @@
       </div>
     </v-flex>
     <v-flex lg8 offset-lg2>
-      <input class="search-input" placeholder="Search shortcuts"/>
+      <input v-model="inputSearch" @keyup="test()" class="search-input" placeholder="Search shortcuts"/>
     </v-flex>
     <v-flex lg8 offset-lg2 v-for="shortcut in shortcuts" :key="shortcut.id">
       <v-layout row wrap>
@@ -38,6 +38,7 @@
   export default {
     data() {
       return {
+        inputSearch: null,
         shortcuts: [
           {
             title_section: 'Editing',
@@ -454,6 +455,10 @@
             ]
           },
         ]
+      }
+    },
+    methods: {
+      test() {
       }
     },
     head() {
