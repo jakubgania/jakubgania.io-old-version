@@ -1,72 +1,77 @@
 <template>
-  <div v-if="displayToolbar()">
-    <v-toolbar color="white" absolute class="toolbar-header">
-      <v-toolbar-title>
-        <nuxt-link to="/" class="logo-link">
-          Jakub Gania
-        </nuxt-link>
-      </v-toolbar-title>
-      <v-spacer/>
-      <v-toolbar-side-icon
-        @click.native="$emit('switchNavigationDrawer')"
-        class="hidden-xl-only hidden-lg-only hidden-md-only"
-      />
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn to="/" flat class="link-button-section">
-          <div class="link-text">
-            Home
-          </div>
-        </v-btn>
-        <v-btn to="/about" flat class="link-button-section">
-          <div class="link-text">
-            O mnie
-          </div>
-        </v-btn>
-        <v-btn to="/projects" flat class="link-button-section">
-          <div class="link-text">
-            Projekty
-          </div>
-        </v-btn>
-        <v-btn to="/contact" flat class="link-button-section">
-          <div class="link-text">
-            Kontakt
-          </div>
-        </v-btn>
-        <v-btn to="/shortcuts" flat class="link-button-section">
-          <div class="link-text">
-            Shortcuts
-          </div>
-        </v-btn>
-        <v-btn to="/other-resources" flat class="link-button-section">
-          <div class="link-text">
-            Inne
-          </div>
-        </v-btn>
-        <v-btn to="/photos" flat class="link-button-section">
-          <div class="link-text">
-            Zdjęcia
-          </div>
-        </v-btn>
-        <v-btn href="https://github.com/jakubgania" flat class="link-button-section">
-          <div class="link-text">
-            Github
-          </div>
-        </v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
-  </div>
+	<div v-if="displayToolbar()">
+		<v-toolbar color="white" absolute class="toolbar-header">
+			<v-toolbar-title>
+				<nuxt-link to="/" class="logo-link">
+					Jakub Gania
+				</nuxt-link>
+			</v-toolbar-title>
+			<v-spacer/>
+			<v-toolbar-side-icon @click.native="$emit('switchNavigationDrawer')" class="hidden-xl-only hidden-lg-only"/>
+			<v-toolbar-items class="hidden-md-and-down">
+				<v-btn v-for="page in pages" :key="page.id" :to="page.path" flat class="link-button-section">
+					<div class="link-text">
+						{{ page.name }}
+					</div>
+				</v-btn>
+			</v-toolbar-items>
+		</v-toolbar>
+	</div>
 </template>
 
 <script>
 export default {
-  methods: {
-    displayToolbar() {
-      return this.$route.name !== 'index';
-    },
-  },
+	data() {
+		return {
+			pages: [
+				{
+					name: 'Home',
+					path: '/'
+				},
+				{
+					name: 'O mnie',
+					path: '/about' 
+				},
+				{
+					name: 'Projekty',
+					path: '/projects' 
+				},
+				{
+					name: 'Kontakt',
+					path: '/contact' 
+				},
+				{
+					name: 'Shortcuts',
+					path: '/shortcuts' 
+				},
+				{
+					name: 'Inne',
+					path: '/other-resources' 
+				},
+				{
+					name: 'Zdjęcia',
+					path: '/photos' 
+				},
+				{
+					name: 'Github',
+					link: 'https://github.com/jakubgania' 
+				},
+				{
+					name: 'Linkedin',
+					link: 'https://www.linkedin.com/in/jakubgania'
+				}
+			]
+		}
+	},
+	methods: {
+		displayToolbar() {
+			return this.$route.name !== 'index'
+		}
+	},
 }
 </script>
 
 <style lang="scss">
-  @import '../assets/scss/toolbar-header.scss';
+	@import '../assets/scss/toolbar-header.scss';
 </style>
+

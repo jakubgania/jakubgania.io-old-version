@@ -1,13 +1,21 @@
 @media only screen and (max-width: 600px)
 {
-  .images-section
-  {
-    margin: 80px 10px 80px 10px;
-  }
-  .full-size-photo
-  {
-    max-width: 100%;
-    height: auto;
-    max-height: 82vh;
-  }
+	.title-page
+	{
+		font-size: 32px;
+	}
+	.subtitle
+	{
+		font-size: 18px;
+	}
+	.images-section
+  	{
+    	margin: 80px 10px 80px 10px;
+  	}
+  	.full-size-photo
+  	{
+    	max-width: 100%;
+    	height: auto;
+    	max-height: 82vh;
+	}
 }
