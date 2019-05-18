@@ -55,8 +55,13 @@ module.exports = {
 
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/markdownit'
   ],
+
+  markdownit: {
+    injected: true
+  },
 
   build: {
     extend(config, ctx) {

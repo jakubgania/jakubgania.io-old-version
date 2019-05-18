@@ -1,4 +1,4 @@
-# jakubgania.io
+## jakubgania.io
 
 Project of my personal website which is constantly being expanded.
 
