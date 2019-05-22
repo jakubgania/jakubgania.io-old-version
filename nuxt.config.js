@@ -59,13 +59,23 @@ module.exports = {
     '@nuxtjs/markdownit'
   ],
 
+  // markdownit: {
+    
+  // },
+
   markdownit: {
-    injected: true
+    injected: true,
+    use: [
+      ['markdown-it-meta'],
+    ]
   },
 
   build: {
     extend(config, ctx) {
-
+      config.module.rules.push({
+        test: /\.md$/,
+        use: ['raw-loader']
+      });
     }
   }
 }

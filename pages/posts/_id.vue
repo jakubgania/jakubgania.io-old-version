@@ -1,5 +1,5 @@
 <template>
-	<div style="text-align:center;">
+	<v-layout align-center justify-center row >
 		<div class="link-section">
 			<nuxt-link to="/posts" class="link">
           		Posty
@@ -7,7 +7,7 @@
 		</div>
 
 		<div v-html="$md.render(model)" class="" :class="{ 'page-not-found': error }"></div>
-	</div>
+	</v-layout>
 </template>
 
 <script>

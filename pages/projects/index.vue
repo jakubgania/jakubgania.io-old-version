@@ -21,9 +21,12 @@
       style="text-align: left;margin-top:80px;margin-bottom:80px;"
     >
       <div v-for="link in links" :key="link.id">
-        <nuxt-link :to="link.project_link" class="link">
+        <a :href="link.project_link">
           {{ link.project_name }}
-        </nuxt-link>
+        </a>
+        <!-- <nuxt-link :to="link.project_link" class="link">
+          {{ link.project_name }}
+        </nuxt-link> -->
       </div>
     </v-flex>
   </v-layout>

@@ -1,3 +1,8 @@
+---
+layout: post
+title: Blogging Like a Hacker
+---
+
 # PAGES
 
 This directory contains your Application Views and Routes.
