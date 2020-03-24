@@ -46,6 +46,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "b489bdcb8d5369df55477771840ace8f"
   },
   {
+    "url": "/jakubgania.io-old-version/_nuxt/a9f531e266f86a548ae5.js",
+    "revision": "cbc5e2852667614cb632fa51b5002cda"
+  },
+  {
     "url": "/jakubgania.io-old-version/_nuxt/b90f1065f359e82cab35.js",
     "revision": "ad5bf4db7ecdc6a8c31819dc35cccc2f"
   },
@@ -56,10 +60,6 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "/jakubgania.io-old-version/_nuxt/bed20c4e710ac00ef5c2.js",
     "revision": "6e578975e3c71a8ca44dfae1804483f4"
-  },
-  {
-    "url": "/jakubgania.io-old-version/_nuxt/c864d1523cd9ec087043.js",
-    "revision": "2add96469422840a5d8c6bdbc759e96c"
   },
   {
     "url": "/jakubgania.io-old-version/_nuxt/e6861f129d190d08255f.js",
