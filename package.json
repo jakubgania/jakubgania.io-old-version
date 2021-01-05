@@ -15,7 +15,7 @@
     "@nuxtjs/markdownit": "^1.2.4",
     "@nuxtjs/pwa": "^2.6.0",
     "aos": "^3.0.0-beta.5",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "cross-env": "^5.2.0",
     "front-matter": "^3.0.2",
     "markdown-it-meta": "0.0.1",
